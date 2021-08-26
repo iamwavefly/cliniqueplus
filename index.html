@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Cliniqueplus Dashboard</title>
+    <!-- LINEICONS -->
+    <link rel="stylesheet" href="./public/assets/font/LineIcons/reset.css">
+    <link rel="stylesheet" href="./public/styles/msg.css">
+    <link rel="stylesheet" href="./public/styles/records.css">
+    <link rel="stylesheet" href="./public/styles/patient.css">
+    <link rel="stylesheet" href="./public/styles/media_query.css">
+    <link rel="stylesheet" href="./public/styles/circle.css">
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/assets/font/LineIcons/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css">
+</head>
+<!-- ---------------------- -->
+<!-- --------[MODAL]------- -->
+<!-- ---------------------- -->
+<div class="modal_container" id="modal_container">
+    <div class="modal trigger modal_box">
+        <div class="modal_header">
+            <button class="modal_cnl" id="modal_cnl">X</button>
+            <h3>Available Bed Spaces</h3>
+            <!-- <p>Red colors are filled while green color are empty</p> -->
+        </div>
+        <div class="modal_content">
+            <div class="modal_body header">
+                <h3>First Floor</h3>
+            </div>
+            <div class="modal_body sub-header">
+                <h3>ICU</h3>
+            </div>
+            <div class="modal_body bed">
+                <div class="bed-1 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-2 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-3">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>New</span>
+                </div>
+                <div class="bed-3">
+                    <span>Lin</span>
+                </div>
+                <div class="bed-4">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+            </div>
+            <div class="modal_body sub-header">
+                <h3>HDU</h3>
+            </div>
+            <div class="modal_body bed">
+                <div class="bed-1 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-2 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-3">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>New</span>
+                </div>
+                <div class="bed-3">
+                    <span>Lin</span>
+                </div>
+                <div class="bed-4">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+            </div>
+            <div class="modal_body header">
+                <h3>Ground Floor</h3>
+            </div>
+            <div class="modal_body sub-header">
+                <h3>Male Ward</h3>
+            </div>
+            <div class="modal_body bed">
+                <div class="bed-1 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-2 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-3">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>New</span>
+                </div>
+                <div class="bed-3">
+                    <span>Lin</span>
+                </div>
+                <div class="bed-4">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+            </div>
+            <div class="modal_body sub-header">
+                <h3>Female Ward</h3>
+            </div>
+            <div class="modal_body bed">
+                <div class="bed-1 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-2 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-3">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>New</span>
+                </div>
+                <div class="bed-3">
+                    <span>Lin</span>
+                </div>
+                <div class="bed-4">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+            </div>
+            <div class="modal_body header">
+                <h3>First Floor</h3>
+            </div>
+            <div class="modal_body sub-header">
+                <h3>ICU</h3>
+            </div>
+            <div class="modal_body bed">
+                <div class="bed-1 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-2 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-3">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>New</span>
+                </div>
+                <div class="bed-3">
+                    <span>Lin</span>
+                </div>
+                <div class="bed-4">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>Bed</span>
+                </div>
+                <div class="bed-5">
+                    <span>Bed</span>
+                </div>
+            </div>
+            <div class="modal_body sub-header">
+                <h3>HDU</h3>
+            </div>
+            <div class="modal_body bed">
+                <div class="bed-1 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-2 open">
+                    <span>Bed</span>
+                </div>
+                <div class="bed-3">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>New</span>
+                </div>
+                <div class="bed-3">
+                    <span>Lin</span>
+                </div>
+                <div class="bed-4">
+                    <div class="tooltip">
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                        <span>Hello</span>
+                    </div>
+                    <span>Bed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+      <!-- Loader -->
+      <div class="wrap-loader">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">NOW LOADING</div>
+        </div>
+      </div>
+      <!-- /Loader -->
+    <div class="root">
+        <div class="left_panel night-color" id="left_toggle">
+            <div class="brand__logo" id="brand_logo">
+                <div class="logo">
+                    <img src="./public/assets/images/logo__brand.png" alt="" srcset="">
+                </div>
+                <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+            </div>
+            <div class="primary-btn">
+                    <div class="btn modal_toggle" id="primary_btn">
+                        <i class="lni lni-layers"></i>
+                        <a href="javascript:void()" id="btn__content">Bed Status</a>
+                        <i class="lni lni-arrow-right"></i>                   
+                    </div>
+            </div>
+            <ul class="navbar" id="navbar">
+                <li class="nav_list nav___active" id="nav_list"><i class="lni lni-first-aid"></i><a id="nav_link" class="nav_link" href="#">Front Office <img class="drop__arr" id="drop__arr" src="./public/assets/icons/front-arrow.svg" alt=""></a></li>
+                <ul class="drop__nav" id="drop__nav">
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#">Visitor Book</a></li>
+                    <li><a href="#">Complain</a></li>
+                    <li><a href="#">Call Logs</a></li>
+                    <li><a href="#">Postal</a></li>
+                </ul>
+                <li class="nav_list" id="nav_list"><i class="lni lni-sthethoscope"></i><a id="nav_link" class="nav_link" href="#">HIS <img class="drop__arr" id="drop__arr" src="./public/assets/icons/front-arrow.svg" alt=""></a></li>
+                <ul class="drop__nav" id="drop__nav">
+                    <li><a href="/out-patient">OPD</a></li>
+                    <li><a href="/in-patient">IPD</a></li>
+                    <li><a href="#">ICU</a></li>
+                    <li><a href="#">Operation Theatre</a></li>
+                </ul>
+                <li class="nav_list"><i class="lni lni-drop"></i><a id="nav_link" class="nav_link" href="#">Blood Bank</a></li>
+                <li class="nav_list" id="nav_list"><i class="lni lni-world-alt"></i><a id="nav_link" class="nav_link" href="#">LIS <img class="drop__arr" id="drop__arr" src="./public/assets/icons/front-arrow.svg" alt=""></a></li>
+                <ul class="drop__nav" id="drop__nav">
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">QC</a></li>
+                    <li><a href="#">Phleb</a></li>
+                    <li><a href="#">Analysers</a></li>
+                </ul>
+                <li class="nav_list"><i class="lni lni-pulse"></i><a id="nav_link" class="nav_link" href="#">RIS</a></li>
+                <li class="nav_list"><i class="lni lni-heart"></i><a id="nav_link" class="nav_link" href="#">Cardiology</a></li>
+                <li class="nav_list"><i class="lni lni-wallet"></i><a id="nav_link" class="nav_link" href="#">Finance</a></li>
+                <li class="nav_list" id="nav_list"><i class="lni lni-capsule"></i><a id="nav_link" class="nav_link" href="#">PIS <img class="drop__arr" id="drop__arr" src="./public/assets/icons/front-arrow.svg" alt=""></a></li>
+                <ul class="drop__nav" id="drop__nav">
+                    <li><a href="#">Dispense</a></li>
+                    <li><a href="#">Stocks</a></li>
+                </ul>
+                <li class="nav_list" id="nav_list"><i class="lni lni-shield"></i><a id="nav_link" class="nav_link" href="#">Admin <img class="drop__arr" id="drop__arr" src="./public/assets/icons/front-arrow.svg" alt=""></a></li>
+                <ul class="drop__nav" id="drop__nav">
+                    <li><a href="#">HR</a></li>
+                    <li><a href="#">Inventory</a></li>
+                </ul>
+                <li class="nav_list" id="nav_list"><i class="lni lni-bar-chart"></i><a id="nav_link" class="nav_link" href="/records">Records <img class="drop__arr" id="drop__arr" src="./public/assets/icons/front-arrow.svg" alt=""></a></li>
+                <ul class="drop__nav" id="drop__nav">
+                    <li><a href="/add_patient">Add Patient</a></li>
+                    <li><a href="#">HMO</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Coding & Indexing</a></li>
+                    <li><a href="#">All Patients</a></li>
+                </ul>
+                <li class="nav_list"><i class="lni lni-car"></i><a id="nav_link" class="nav_link" href="#">Logistics <img class="drop__arr" id="drop__arr" src="" alt=""></a></li> 
+            </ul>
+        </div>
+        <!-- <ul class="nav__footer">
+            <li><img src="./public/assets/icons/help.svg" alt=""><a id="nav_link" href="#">Help?</a></li>
+        </ul> -->
+        <div class="top_panel night-color">
+            <div class="cola" id="cola">
+                <img src="./public/assets/icons/cola.svg" alt="">
+            </div>
+            <div class="brand__logo-mobile">
+                <img src="./public/assets/images/logo__brand.png" alt="" class="img__mobile">
+                <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+            </div>
+            <!-- <div class="user_sniper-mobile">
+                <div class="avatar" id="user__snippet__arr">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div>
+            </div> -->
+            <div class="search_main">
+                <form action="/" method="get">
+                    <div class="search_len">
+                        <picture>
+                            <source 
+                              media="(max-width: 650px)"
+                              srcset="./public/assets/icons/search_len2.svg">
+                            <source 
+                              media="(max-width: 465px)"
+                              srcset="./public/assets/icons/search_len2.svg">
+                            <img 
+                              src="./public/assets/icons/25.svg" 
+                              alt="a cute kitten">
+                          </picture>
+                    </div>
+                    <input type="text" id="search_input" placeholder="Search for patient">
+                </form>
+            </div>
+            <div class="user_sniper">
+                <button class="notif active" id="MsgCont">
+                    <i class="lni lni-alarm"></i>
+                    <!-- ----------------------------------------- -->
+                    <!-- ------------[NOTIFICATION MSG]----------- -->
+                    <!-- --------------------------------------------->
+                    <div class="msgContent" id="msgContent">
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Hello, new update</h3>
+                                <span>&#128337;14min, ago</span>
+                                <p>new have a new update from mexico now</p>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Hello, new update</h3>
+                                <span>&#128337;14min, ago</span>
+                                <p>new have a new update from mexico now</p>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Hello, new update</h3>
+                                <span>&#128337;14min, ago</span>
+                                <p>new have a new update from mexico now</p>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Hello, new update</h3>
+                                <span>&#128337;14min, ago</span>
+                                <p>new have a new update from mexico now</p>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Hello, new update</h3>
+                                <span>&#128337;14min, ago</span>
+                                <p>new have a new update from mexico now</p>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Hello, new update</h3>
+                                <span>&#128337;14min, ago</span>
+                                <p>new have a new update from mexico now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------- -->
+                    <!-- ------------[NOTIFICATION MSG END]----------- -->
+                    <!-- --------------------------------------------->
+                </button>
+                <button class="msg" id="MsgCont">
+                    <i class="lni lni-envelope"></i>
+                    <div class="msgContent" id="msgContent">
+                        <h2>Hello 2</h2>
+                    </div>
+                </button>
+                <button class="full-screen" id="full-screen">
+                    <i class="lni lni-full-screen"></i>
+                </button>
+                <!-- <div class="avatar">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div> -->
+                <button class="user_menu msg" id="MsgCont">
+                    <img src="./public/assets/images/avatar.png" class="mobile__avatar-img" alt="" srcset="">
+                    <div class="user_menu msgContent" id="msgContent">
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/setup.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Setup</h3>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/reports.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Reports</h3>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/profile.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Profile</h3>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/logout.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Logout</h3>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <div class="username">
+                    <h3 class="theme_text">Samson Monday</h3>
+                </div>
+                <!-- <div class="drop_arr" id="user__snippet__arr">
+                    <img src="./public/assets/icons/28.svg" alt="" srcset="">
+                </div> -->
+                <button class="user_menu msg arr" id="MsgCont">
+                    <img src="./public/assets/icons/28.svg" alt="" srcset="">
+                    <div class="user_menu msgContent" id="msgContent">
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/setup.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Setup</h3>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/reports.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Reports</h3>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/profile.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Profile</h3>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="msg__avatar">
+                                <div class="avatar">
+                                    <img src="./public/assets/icons/logout.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="msg__snippet">
+                                <h3>Logout</h3>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="theme__color" id="theme_changer"><img class="nav__icon" src="./public/assets/icons/10.svg" alt=""></div>
+            
+            <div class="content">
+<div class="main__panel">
+    <div class="user_welcome-mobile">
+        <h3 class="theme_text">Welcome Back!</h3>
+        <h2 class="theme_text">Samson Monday</h2>
+    </div>
+    <div class="search-mobile">
+        <input type="text" name="search" placeholder="Search for patient">
+        <button type="submit" class="mobile__search-btn">
+            <img src="./public/assets/icons/search_mobile.svg">
+        </button>
+    </div>
+    <div class="card__title-mobile">
+        <h3 class="theme__text">HolyLand Overview</h3>
+    </div>
+    <div class="cards">
+        <div class="card-1 night-color" >
+            <div class="card__icon">
+                <img src="./public/assets/icons/16.svg" alt="">
+            </div>
+            <div class="card__content">
+                <h3 class="theme_text">2,260</h3>
+                <p>Total Patients</p>
+            </div>
+            <img class="card__more__action" src="./public/assets/icons/27.svg" alt="" srcset="">
+        </div>
+        <div class="card-2 night-color" >
+            <div class="card__icon">
+                <img src="./public/assets/icons/19.svg" alt="">
+            </div>
+            <div class="card__content">
+                <h3 class="theme_text">460</h3>
+                <p>Available Staff</p>
+            </div>
+            <img class="card__more__action" src="./public/assets/icons/27.svg" alt="" srcset="">
+        </div>
+        <div class="card-3 night-color" >
+            <div class="card__icon">
+                <img src="./public/assets/icons/18.svg" alt="">
+            </div>
+            <div class="card__content">
+                <h3 class="theme_text">4,860</h3>
+                <p>Avg. Treat. Cost</p>
+            </div>
+            <img class="card__more__action" src="./public/assets/icons/27.svg" alt="" srcset="">
+        </div>
+        <div class="card-4 night-color" >
+            <div class="card__icon">
+                <img src="./public/assets/icons/17.svg" alt="">
+            </div>
+            <div class="card__content">
+                <h3 class="theme_text">60</h3>
+                <p>Available Cars</p>
+            </div>
+            <img class="card__more__action" src="./public/assets/icons/27.svg" alt="" srcset="">
+        </div>
+    </div>
+    <div class="charts">
+        <div class="chart-1 night-color" >
+            <div class="chart__header">
+                <h3 class="theme_text">Outpatient vs Impatient Trend</h3>
+            </div>
+            <div class="chart__container">
+                <canvas id="chart-1"></canvas>
+            </div>
+        </div>
+        <div class="chart-2 night-color" >
+            <div class="chart__header">
+                <h3 class="theme_text">Inpatient vs Outpatient by %</h3>
+            </div>
+            <div class="clearfix cirle__w__percentage">
+
+                <div class="c100 p70 normal primary">
+                    <span>70%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart__footer">
+                <h3 class="theme_text">Inpatient</h3>
+                <h3 class="theme_text">Outpatient</h3>
+            </div>
+        </div>
+        <div class="chart-3 night-color" >
+            <div class="chart__header">
+                <h3 class="theme_text">Income vs Expenses Trend</h3>
+            </div>
+            <div class="chart__container">
+                <canvas id="chart__finance" ></canvas>
+            </div>
+        </div>
+        <div class="chart-4 night-color" >
+            <div class="chart__header">
+                <h3 class="theme_text">Patient by Division <img src="./public/assets/icons/28.svg" alt="" srcset=""></h3>
+                
+            </div>
+            <div class="content">
+                <div class="div__header">
+                        <h3 class="theme_text"><img src="./public/assets/icons/20.svg" alt="" srcset=""> DIVISION</h3>
+                        <h3 class="theme_text">PATIENT</h3>
+                </div>
+                <div class="div__content">
+                    <p class="theme_text"><img src="./public/assets/icons/21.svg" alt="" srcset=""> Cardiolody</p>
+                    <p class="theme_text">45</p>
+                    <p class="theme_text"><img src="./public/assets/icons/22.svg" alt="" srcset=""> Neurology</p>
+                    <p class="theme_text">22</p>
+                    <p class="theme_text"><img src="./public/assets/icons/23.svg" alt="" srcset=""> Surgery</p>
+                    <p class="theme_text">22</p>
+                </div>
+            </div>
+        </div>
+        <div class="chart-5 night-color" >
+            <div class="header">
+                <h3>340,000</h3>
+                <p>Patients this month</p>
+            </div>
+            <div class="chart__container">
+                <canvas id="chart-5" ></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="patient_snippet_schedule">
+        <div class="patient_table_title">
+            <h3>Recent Appointment</h3>
+        </div>
+        <div class="patient_header">
+            <div class="th-1"></div>
+            <div class="th-2"><h3>Patient</h3></div>
+            <div class="th-3"><h3>Due Date</h3></div>
+            <div class="th-4"><h3>Payment</h3></div>
+            <div class="th-5"><h3>Doctor In-Charge</h3></div>
+            <div class="th-6"><h3>Appointment Type</h3></div>
+            <div class="th-7"><h3>Status</h3></div>
+            <div class="th-8"></div>
+        </div>
+        <div class="patient_body">
+            <div class="tb-1"><h3>1</h3></div>
+            <div class="tb-2">
+                <div class="table_profile_avatar">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div>
+                <div class="table_profile_name">
+                    <h3>Victor Chibere</h3>
+                    <p>Male, 21years</p>
+                </div>
+            </div>
+            <div class="tb-3">
+                <h3>2/4/2020 - 12:30</h3>
+            </div>
+            <div class="tb-4"><h3>Paid</h3></div>
+            <div class="tb-5"><h3>DOc. Wale Kings</h3></div>
+            <div class="tb-6"><h3>Online</h3></div>
+            <div class="tb-7"><h3> <img src="./public/assets/icons/status_table.svg" alt="" srcset=""> Vital</h3></div>
+            <div class="tb-8">
+                <i class="lni lni-pencil-alt"></i>
+                <i class="lni lni-trash"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+           
+<div class="bottom">
+    <footer class="theme_text">
+        CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved.
+    </footer>
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+</div>
+<div class="hamburger_menu">
+    <img src="./public/assets/icons/hamburger.svg" id="hamburger" alt="">
+</div>
+</div>
+
+<script defer src="./public/scripts/theme.js"></script>
+<script src="./public/scripts/chart.min.js"></script>
+<script src="./public/scripts/fontawesome.min.js"></script>
+<script src="./public/scripts/add_patient.js"></script>  
+<script src="./public/scripts/records.js"></script>
+<script src="./public/scripts/main.js"></script>
+<script src="./public/scripts/chart.js"></script>
+<script src="./public/scripts/patient.js"></script>
+</body>
+</html>

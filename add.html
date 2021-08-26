@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Cliniqueplus | Add User</title>
+    <!-- LINEICONS -->
+    <link rel="stylesheet" href="./public/styles/auth.css" />
+    <link rel="stylesheet" href="./public/styles/multi-step-form.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="stylesheet" href="./public/assets/font/LineIcons/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./public/assets/font/LineIcons/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css"
+    />
+
+  </head>
+  <body>
+      <!-- Loader -->
+      <div class="wrap-loader">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">NOW LOADING</div>
+        </div>
+      </div>
+      <!-- /Loader -->
+    <div class="formContainer">
+      <div class="formSideBar">
+        <div class="content">
+          <h3>
+            Welcome, Back!
+          </h3>
+          <p>
+            Enter your personal details and start journey with us
+          </p>
+          <a href="#">Sign In</a>
+        </div>
+      </div>
+      <form id="regForm" action="" aria-autocomplete="off">
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <h3 class="formHeader">Personal Information</h3>
+          <p class="subHeader">
+            Fill your personal details below
+          </p>
+          <div class="columns">
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <input type="text" id="first_name" autofocus required placeholder="First name" oninput="this.className = ''">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <input type="text" id="last_name" required placeholder="Last name" oninput="this.className = ''">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <input type="text" id="other_name" required placeholder="Other name" oninput="this.className = ''">
+              <label for="other_name">Other Name</label>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="form_group">
+              <i class="lni lni-calendar"></i>
+              <input type="date" id="dob" required oninput="this.className = ''">
+              <!-- <label for="dob">Date of Birth</label> -->
+            </div>
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <select id="martital_status" required oninput="this.className = ''">
+                <option disabled selected>Select marital status</option>
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+              </select>
+              <!-- <label for="martital_status">Martital Status</label> -->
+            </div>
+          </div>
+          <div class="columns ">
+            <div class="form_group hasCheckBox">
+              <div class="checkbox">
+                <span>Male:</span>
+                <input type="radio" checked id="male" name="gender">
+                <label for="male"></label>
+              </div>
+              <div class="checkbox">
+                <span>Female:</span>
+                <input type="radio" id="female" name="gender">
+                <label class="ml-20" for="female"></label>
+              </div>
+            </div>
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <input type="file" id="photo" required placeholder="Upload photo" oninput="this.className = ''">
+              <label for="photo">Upload Photo</label>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <input type="text" id="father_name" required placeholder="Father name" oninput="this.className = ''">
+              <label for="father_name">Father Name</label>
+            </div>
+            <div class="form_group">
+              <i class="lni lni-user"></i>
+              <input type="text" id="mother_name" required placeholder="Mother name" oninput="this.className = ''">
+              <label for="mother_name">Mother Name</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab">
+          <h3 class="formHeader">Contact Details</h3>
+          <p class="subHeader">
+            Fill your contact details below
+          </p>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-map-marker"></i>
+              <input type="text" id="current_address" required placeholder="Current address" oninput="this.className = ''">
+              <label for="current_address">Current Address</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-map-marker"></i>
+              <input type="text" id="permanent_address" required placeholder="Permanent address" oninput="this.className = ''">
+              <label for="permanent_address">Permanent Address</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-map-marker"></i>
+              <select id="state" required oninput="this.className = ''">
+                <option value="" selected="selected" disabled>
+                  Select state of origin
+                </option>
+                <option value="Abuja">Abuja FCT</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Bayelsa">Bayelsa</option>
+                <option value="Benue">Benue</option>
+                <option value="Borno">Borno</option>
+                <option value="Cross River">Cross River</option>
+                <option value="Delta">Delta</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Edo">Edo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Imo">Imo</option>
+                <option value="Jigawa">Jigawa</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Katsina">Katsina</option>
+                <option value="Kebbi">Kebbi</option>
+                <option value="Kogi">Kogi</option>
+                <option value="Kwara">Kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Nassarawa">Nassarawa</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Rivers">Rivers</option>
+                <option value="Sokoto">Sokoto</option>
+                <option value="Taraba">Taraba</option>
+                <option value="Yobe">Yobe</option>
+                <option value="Zamfara">Zamfara</option>
+                <option value="Outside Nigeria">Outside Nigeria</option>
+              </select>
+              <label for="state_origin">State of Origin</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-map-marker"></i>
+              <select name="city" id="city" required oninput="this.className = ''">
+                <option value="" disabled selected>
+                  Please select patient state first
+                </option>
+              </select>
+              <label for="state_origin">State of Origin</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab">
+          <h3 class="formHeader">Professional Details</h3>
+          <p class="subHeader">
+            Fill your professional details below
+          </p>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-graduation"></i>
+              <input type="text" id="certificate" required placeholder="Most recent certificate" oninput="this.className = ''">
+              <label for="certificate">Most Recent Certification</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-graduation"></i>
+              <input type="text" id="school_attended" required placeholder="School attended" oninput="this.className = ''">
+              <label for="school_attended">School Attended</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-calendar"></i>
+              <input type="date" id="date_registration" required oninput="this.className = ''">
+              <label for="date_registration">Date of Registration</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab">
+          <h3 class="formHeader">Bank Details</h3>
+          <p class="subHeader">
+            Fill your bank details below
+          </p>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-calculator"></i>
+              <input type="text" id="account_name" required placeholder="Account name" oninput="this.className = ''">
+              <label for="account_name">Account Name</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-money-location"></i>
+              <input type="text" id="bank_name" required placeholder="Bank name" oninput="this.className = ''">
+              <label for="bank_name">Bank Name</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-wallet"></i>
+              <input type="number" id="account_number" required placeholder="Account number" oninput="this.className = ''">
+              <label for="account_number">Account Number</label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="form_group">
+              <i class="lni lni-wallet"></i>
+              <input type="number" id="bvn" required placeholder="bvn" oninput="this.className = ''">
+              <label for="bvn">BVN</label>
+            </div>
+          </div>
+        </div>
+        <div class="forget_password">
+          <label>Forgot password? <a href="#">click here</a></label>
+        </div>
+        <div style="overflow:auto;">
+          <div style="float:right;display: flex;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button style="margin-left: 10px;" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        
+        </form>
+    </div>
+    <script src="./public/scripts/add_patient.js"></script>
+    <script src="./public/scripts/multiStepForm.js"></script>
+    <!-- <script defer src="./scripts/theme.js"></script> -->
+  </body>
+</html>

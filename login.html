@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Cliniqueplus | Login</title>
+    <!-- LINEICONS -->
+    <link rel="stylesheet" href="./public/styles/auth.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="stylesheet" href="./public/styles/msg.css" />
+    <link rel="stylesheet" href="./public/assets/font/LineIcons/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./public/assets/font/LineIcons/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css"
+    />
+
+  </head>
+  <body>
+      <!-- Loader -->
+      <div class="wrap-loader">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">NOW LOADING</div>
+        </div>
+      </div>
+      <!-- /Loader -->
+    <div class="formContainer">
+      <div class="formSideBar login">
+        <div class="content">
+          <h3>
+            Hello, Friend!
+          </h3>
+          <p>
+            Enter your personal details and start journey with us
+          </p>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+      <form autocomplete="off">
+        <h3 class="formHeader">Sign In To Cliniqueplus</h3>
+        <p class="subHeader">
+          Fill your login credentials
+        </p>
+        <div class="msg_status danger">
+          <p>Hello no error found here</p>
+          <p>Hello no error found here</p>
+          <p>Hello no error found here</p>
+          <p>Hello no error found here</p>
+        </div>
+        <div class="column">
+          <div class="form_group">
+            <i class="lni lni-user"></i>
+            <input type="text" id="username" autofocus required placeholder="Enter your username">
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form_group">
+            <i class="lni lni-lock-alt"></i>
+            <input type="password" minlength="4" id="password" required placeholder="Enter your password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="forget_password">
+          <label>Forgot password? <a href="#">click here</a></label>
+        </div>
+        <button>SIGN IN</button>
+      </form>
+    </div>
+    <div class="bottom">
+      <footer class="theme_text">
+        CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved.
+      </footer>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <script defer src="./public/scripts/main.js"></script>
+  </body>
+</html>

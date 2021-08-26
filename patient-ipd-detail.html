@@ -1,0 +1,2685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Cliniqueplus Dashboard</title>
+    <!-- LINEICONS -->
+    <link rel="stylesheet" href="./public/assets/font/LineIcons/reset.css" />
+    <link rel="stylesheet" href="./public/styles/msg.css" />
+    <link rel="stylesheet" href="./public/styles/records.css" />
+    <link rel="stylesheet" href="./public/styles/patient.css" />
+    <link rel="stylesheet" href="./public/styles/media_query.css" />
+    <link rel="stylesheet" href="./public/styles/circle.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./public/assets/font/LineIcons/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css"
+    />
+  </head>
+  <!-- ---------------------- -->
+  <!-- --------[MODAL]------- -->
+  <!-- ---------------------- -->
+  <div class="modal_container" id="modal_container">
+    <div class="modal trigger modal_box">
+      <div class="modal_header">
+        <button class="modal_cnl" id="modal_cnl">X</button>
+        <h3>Available Bed Spaces</h3>
+        <!-- <p>Red colors are filled while green color are empty</p> -->
+      </div>
+      <div class="modal_content">
+        <div class="modal_body header">
+          <h3>First Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>ICU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>HDU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body header">
+          <h3>Ground Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>Male Ward</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>Female Ward</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body header">
+          <h3>First Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>ICU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>HDU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+        <!-- Loader -->
+        <div class="wrap-loader">
+          <div class="loading">
+            <div class="bounceball"></div>
+            <div class="text">NOW LOADING</div>
+          </div>
+        </div>
+        <!-- /Loader -->
+    <div class="root">
+      <!-- --------------------------------------------- -->
+      <!-- ---------------- SIDEBAR NAV----------------- -->
+      <!-- --------------------------------------------- -->
+      <div class="left_panel night-color" id="left_toggle">
+        <div class="brand__logo" id="brand_logo">
+          <div class="logo">
+            <img
+              src="./public/assets/images/logo__brand.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+        </div>
+        <div class="primary-btn">
+          <div class="btn modal_toggle" id="primary_btn">
+            <i class="lni lni-layers"></i>
+            <a href="javascript:void()" id="btn__content">Bed Status</a>
+            <i class="lni lni-arrow-right"></i>
+          </div>
+        </div>
+        <ul class="navbar" id="navbar">
+          <li class="nav_list nav___active" id="nav_list">
+            <i class="lni lni-first-aid"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Front Office
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Visitor Book</a></li>
+            <li><a href="#">Complain</a></li>
+            <li><a href="#">Call Logs</a></li>
+            <li><a href="#">Postal</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-sthethoscope"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >HIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="/out-patient">OPD</a></li>
+            <li><a href="/in-patient">IPD</a></li>
+            <li><a href="#">ICU</a></li>
+            <li><a href="#">Operation Theatre</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-drop"></i
+            ><a id="nav_link" class="nav_link" href="#">Blood Bank</a>
+          </li>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-world-alt"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >LIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Order</a></li>
+            <li><a href="#">QC</a></li>
+            <li><a href="#">Phleb</a></li>
+            <li><a href="#">Analysers</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-pulse"></i
+            ><a id="nav_link" class="nav_link" href="#">RIS</a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-heart"></i
+            ><a id="nav_link" class="nav_link" href="#">Cardiology</a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-wallet"></i
+            ><a id="nav_link" class="nav_link" href="#">Finance</a>
+          </li>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-capsule"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >PIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Dispense</a></li>
+            <li><a href="#">Stocks</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-shield"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Admin
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">HR</a></li>
+            <li><a href="#">Inventory</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-bar-chart"></i
+            ><a id="nav_link" class="nav_link" href="/records"
+              >Records
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="/add_patient">Add Patient</a></li>
+            <li><a href="#">HMO</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Coding & Indexing</a></li>
+            <li><a href="#">All Patients</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-car"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Logistics <img class="drop__arr" id="drop__arr" src="" alt=""
+            /></a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-car"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Setups <img class="drop__arr" id="drop__arr" src="" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- --------------------------------------------- -->
+      <!-- ---------------- SIDEBAR NAV ENDS----------------- -->
+      <!-- --------------------------------------------- -->
+
+      <!-- --------------------------------------------- -->
+      <!-- ---------------- TOP NAV----------------- -->
+      <!-- --------------------------------------------- -->
+      <div class="top_panel night-color">
+        <div class="cola" id="cola">
+          <img src="./public/assets/icons/cola.svg" alt="" />
+        </div>
+        <div class="brand__logo-mobile">
+          <img
+            src="./public/assets/images/logo__brand.png"
+            alt=""
+            class="img__mobile"
+          />
+          <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+        </div>
+        <!-- <div class="user_sniper-mobile">
+                <div class="avatar" id="user__snippet__arr">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div>
+            </div> -->
+        <div class="search_main">
+          <form action="/" method="get">
+            <div class="search_len">
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="./public/assets/icons/search_len2.svg"
+                />
+                <source
+                  media="(max-width: 465px)"
+                  srcset="./public/assets/icons/search_len2.svg"
+                />
+                <img src="./public/assets/icons/25.svg" alt="a cute kitten" />
+              </picture>
+            </div>
+            <input
+              type="text"
+              id="search_input"
+              placeholder="Search for patient"
+            />
+          </form>
+        </div>
+        <div class="user_sniper">
+          <button class="notif active" id="MsgCont">
+            <i class="lni lni-alarm"></i>
+            <!-- ----------------------------------------- -->
+            <!-- ------------[NOTIFICATION MSG]----------- -->
+            <!-- --------------------------------------------->
+            <div class="msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- ------------[NOTIFICATION MSG END]----------- -->
+            <!-- --------------------------------------------->
+          </button>
+          <button class="msg" id="MsgCont">
+            <i class="lni lni-envelope"></i>
+            <div class="msgContent" id="msgContent">
+              <h2>Hello 2</h2>
+            </div>
+          </button>
+          <button class="full-screen" id="full-screen">
+            <i class="lni lni-full-screen"></i>
+          </button>
+          <!-- <div class="avatar">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div> -->
+          <button class="user_menu msg" id="MsgCont">
+            <img
+              src="./public/assets/images/avatar.png"
+              class="mobile__avatar-img"
+              alt=""
+              srcset=""
+            />
+            <div class="user_menu msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/setup.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Setup</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/reports.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Reports</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/profile.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Profile</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/logout.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="username">
+            <h3 class="theme_text">Samson Monday</h3>
+          </div>
+          <!-- <div class="drop_arr" id="user__snippet__arr">
+                    <img src="./public/assets/icons/28.svg" alt="" srcset="">
+                </div> -->
+          <button class="user_menu msg arr" id="MsgCont">
+            <img src="./public/assets/icons/28.svg" alt="" srcset="" />
+            <div class="user_menu msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/setup.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Setup</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/reports.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Reports</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/profile.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Profile</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/logout.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="theme__color" id="theme_changer">
+        <img class="nav__icon" src="./public/assets/icons/10.svg" alt="" />
+      </div>
+      <!-- --------------------------------------------- -->
+      <!-- ---------------- TOP NAV ENDS----------------- -->
+      <!-- --------------------------------------------- -->
+
+      <!-- ------------------------------------------------>
+      <!---------------------- CONTENT -------------------->
+      <!-- ------------------------------------------------>
+      <div class="content">
+        <div class="breadcrumb night-color">
+          <ul>
+            <li><a href="/">/</a></li>
+            <li><a href="/out_patient">patient/</a></li>
+            <li><a href="/out_patient/patient">births</a></li>
+            <li><a href="/out_patient/patient">/birth details</a></li>
+          </ul>
+        </div>
+        <div class="patient_container fluid">
+          <div class="patient_table">
+            <div class="header_section">
+              <h3>Patient Visits as at 12/2/2021</h3>
+              <a class="btn primary" href="/out_patient/records">
+                <i class="lni lni-plus"></i>
+                <span>Add Birth</span>
+              </a>
+            </div>
+            <button id="hideUserProfile" class="hide_profile">
+              <i class="lni lni-chevron-up"></i>
+            </button>
+            <div class="patient_profile_snippet columns">
+              <div class="colmun_profile">
+                <div class="profile_img_wrapper">
+                  <img src="./public/assets/images/nurse.jpg" />
+                </div>
+              </div>
+              <div class="column header">
+                <div class="title">
+                  <h2>No Name Yet</h2>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <a class="btn primary green" href="/out_patient/records">
+                  <i class="lni lni-pencil"></i>
+                  <span>Edit</span>
+                </a>
+              </div>
+              <div class="colmun patient_details_shot row">
+                <div class="patient_height">
+                  <i class="lni lni-sthethoscope"></i>
+                  <p>Physician <span>Dr. Frank Matieu</span></p>
+                </div>
+                <div class="patient_height">
+                  <i class="lni lni-heart"></i>
+                  <p>Marital Status <span>Married</span></p>
+                </div>
+                <div class="patient_height">
+                  <i class="lni lni-slim"></i>
+                  <p>Gender <span>Female</span></p>
+                </div>
+                <div class="patient_height">
+                  <i class="lni lni-user"></i>
+                  <p>Patient No. <span>PT232345</span></p>
+                </div>
+                <div class="patient_pulse_rate">
+                  <i class="lni lni-pulse"></i>
+                  <p>Pulse Rate <span>20PBM</span></p>
+                </div>
+              </div>
+              <div class="colmun"></div>
+            </div>
+            <div class="table_tabs">
+              <div class="tab-1 active" id="tab" data-tab="1">
+                <h3><i class="lni lni-first-aid"></i> Vitals</h3>
+              </div>
+              <div class="tab-2" id="tab" data-tab="2">
+                <h3><i class="lni lni-users"></i> Consultation</h3>
+              </div>
+              <div class="tab-3" id="tab" data-tab="3">
+                <h3><i class="lni lni-microscope"></i> Lab Request</h3>
+              </div>
+              <div class="tab-4" id="tab" data-tab="4">
+                <h3><i class="lni lni-capsule"></i> Prescription</h3>
+              </div>
+              <div class="tab-5" id="tab" data-tab="5">
+                <h3><i class="lni lni-graph"></i> Bills</h3>
+              </div>
+              <div class="tab-6" id="tab" data-tab="6">
+                <h3><i class="lni lni-wallet"></i> Charges</h3>
+              </div>
+              <div class="tab-7" id="tab" data-tab="7">
+                <h3><i class="lni lni-money-location"></i> Payment</h3>
+              </div>
+              <div class="tab-8" id="tab" data-tab="8">
+                <h3><i class="lni lni-bar-chart"></i> Charts</h3>
+              </div>
+              <div class="tab-9" id="tab" data-tab="9">
+                <h3><i class="lni lni-timer"></i> Timeline</h3>
+              </div>
+              <div class="tab-10" id="tab" data-tab="10">
+                <h3><i class="lni lni-timer"></i> Instruction</h3>
+              </div>
+            </div>
+            <div class="table_section">
+              <div class="table_content tab">
+                <div class="tab_content" id="tab-content-1">
+                  <div class="table_section">
+                    <div class="table_header">
+                      <div class="head-1">
+                        <h3>Date <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-2">
+                        <h3>Height(cm) <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-3">
+                        <h3>Weight(kg) <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-4">
+                        <h3>Pulse(b/m) <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-5">
+                        <h3>
+                          Temp(&#8728;c) <i class="lni lni-chevron-down"></i>
+                        </h3>
+                      </div>
+                      <div class="head-5">
+                        <h3>BP(mmHg) <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-5">
+                        <h3>Resp(c/m) <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-5">
+                        <h3>SP02(%) <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-6">
+                        <h3>
+                          Action
+                          <i class="lni lni-more toolTip">
+                            <span class="toolTipText">
+                              <h3>Hello, world</h3>
+                              <a href="#">link</a>
+                            </span>
+                          </i>
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="table_content">
+                      <div class="table_body">
+                        <div class="body-1">
+                          <p>22/4/2021</p>
+                        </div>
+                        <div class="body-2">
+                          <p>86</p>
+                        </div>
+                        <div class="body-3">
+                          <p>90</p>
+                        </div>
+                        <div class="body-4">
+                          <p>88p</p>
+                        </div>
+                        <div class="body-5">
+                          <p>98t</p>
+                        </div>
+                        <div class="body-6">
+                          <p>26</p>
+                        </div>
+                        <div class="body-7">
+                          <p>56</p>
+                        </div>
+                        <div class="body-7">
+                          <p>anything</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="table_body">
+                        <div class="body-1">
+                          <p>22/4/2022</p>
+                        </div>
+                        <div class="body-2">
+                          <p>46</p>
+                        </div>
+                        <div class="body-3">
+                          <p>90</p>
+                        </div>
+                        <div class="body-4">
+                          <p>98p</p>
+                        </div>
+                        <div class="body-5">
+                          <p>98t</p>
+                        </div>
+                        <div class="body-6">
+                          <p>26</p>
+                        </div>
+                        <div class="body-7">
+                          <p>86</p>
+                        </div>
+                        <div class="body-7">
+                          <p>anything</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="section_button">
+                        <a
+                          class="btn primary green"
+                          href="/out_patient/records"
+                        >
+                          <i class="lni lni-plus"></i>
+                          <span>Add visits</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-2">
+                  <div class="table_tabs lighter">
+                    <div class="tab-11 active" id="tab-inner" data-tab="11">
+                      <h3>
+                        <i class="lni lni-first-aid"></i> Present Complains
+                      </h3>
+                    </div>
+                    <div class="tab-12 tab-fluid" id="tab-inner" data-tab="12">
+                      <h3>
+                        <i class="lni lni-users"></i> Hist. of Presenting Compl.
+                      </h3>
+                    </div>
+                    <div class="tab-13 tab-fluid" id="tab-inner" data-tab="13">
+                      <h3>
+                        <i class="lni lni-microscope"></i> Past Med. History
+                      </h3>
+                    </div>
+                    <div class="tab-14 tab-fluid" id="tab-inner" data-tab="14">
+                      <h3>
+                        <i class="lni lni-capsule"></i> Family & Social Hist.
+                      </h3>
+                    </div>
+                    <div class="tab-15 tab-fluid" id="tab-inner" data-tab="15">
+                      <h3><i class="lni lni-graph"></i> Exam. & Findings</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-3">
+                  <div class="table_section">
+                    <div class="table_header">
+                      <div class="head-1">
+                        <h3>Date <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-2">
+                        <h3>Requested <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-3">
+                        <h3>Test <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-3">
+                        <h3>Range <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-3">
+                        <h3>Result <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-3">
+                        <h3>Status <i class="lni lni-chevron-down"></i></h3>
+                      </div>
+                      <div class="head-4">
+                        <h3>
+                          Action
+                          <i class="lni lni-more toolTip">
+                            <span class="toolTipText">
+                              <h3>Hello, world</h3>
+                              <a href="#">link</a>
+                            </span>
+                          </i>
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="table_content">
+                      <div class="table_body">
+                        <div class="body-1">
+                          <p>12/12/2020</p>
+                        </div>
+                        <div class="body-2">
+                          <p>Dr. Testboi</p>
+                        </div>
+                        <div class="body-3">
+                          <p>Headache</p>
+                        </div>
+                        <div class="body-3">
+                          <p>90% - 100%</p>
+                        </div>
+                        <div class="body-3">
+                          <p class="bg-green">100%</p>
+                        </div>
+                        <div class="body-3">
+                          <p>Headache fixed</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="section_button">
+                        <a
+                          class="btn primary green"
+                          href="/out_patient/records"
+                        >
+                          <i class="lni lni-plus"></i>
+                          <span>Order Test</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-4">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>Date <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>
+                        Medicine Category <i class="lni lni-chevron-down"></i>
+                      </h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Medicine <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Dosage <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1/12/2021</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Elovine</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Chemocine</p>
+                      </div>
+                      <div class="body-3">
+                        <p>34 / day</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Prescription</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-5">
+                  <div class="tab_columns">
+                    <div class="tab_column">
+                      <div class="table_header">
+                        <div class="head-1">
+                          <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                        </div>
+                        <div class="head-2">
+                          <h3>Charges <i class="lni lni-chevron-down"></i></h3>
+                        </div>
+                        <div class="head-3">
+                          <h3>Category <i class="lni lni-chevron-down"></i></h3>
+                        </div>
+                        <div class="head-3">
+                          <h3>Date <i class="lni lni-chevron-down"></i></h3>
+                        </div>
+                        <div class="head-6">
+                          <h3>Amount <i class="lni lni-chevron-down"></i></h3>
+                        </div>
+                      </div>
+                      <div class="table_content">
+                        <div class="table_body">
+                          <div class="body-1">
+                            <p>1</p>
+                          </div>
+                          <div class="body-2">
+                            <p>Paracetamol</p>
+                          </div>
+                          <div class="body-3">
+                            <p>Chemocine</p>
+                          </div>
+                          <div class="body-3">
+                            <p>1/12/2021</p>
+                          </div>
+                          <div class="body-3">
+                            <p>N4,000</p>
+                          </div>
+                        </div>
+                        <div class="section_button">
+                          <a
+                            class="btn primary green"
+                            href="/out_patient/records"
+                          >
+                            <i class="lni lni-plus"></i>
+                            <span>Add Bill</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab_column">
+                      <div class="sidebar_table table_form">
+                        <div class="header">
+                          <h3>Bill Summary</h3>
+                          <h3>Amount (N)</h3>
+                        </div>
+                        <div class="body">
+                          <p>Consultation Charges (N)</p>
+                          <input type="text" value="20,000" />
+                        </div>
+                        <div class="body">
+                          <p>Total Charges (N)</p>
+                          <input type="text" value="20,000" />
+                        </div>
+                        <div class="body">
+                          <p>Other Charges</p>
+                          <input type="text" value="60,000" />
+                        </div>
+                        <div class="body">
+                          <p>Discount (%)</p>
+                          <input type="text" value="5,000" />
+                        </div>
+                        <div class="body">
+                          <p>Tax</p>
+                          <input type="text" value="60,000" />
+                        </div>
+                        <div class="body">
+                          <p>Total Payment</p>
+                          <input type="text" value="80,000" />
+                        </div>
+                        <div class="body">
+                          <p>Net Payable Amount (N)</p>
+                          <input type="text" value="80,000" />
+                        </div>
+                        <div class="butttons">
+                          <div class="section_button">
+                            <a
+                              class="btn primary green"
+                              href="/out_patient/records"
+                            >
+                              <i class="lni lni-plus"></i>
+                              <span>Calculate</span>
+                            </a>
+                          </div>
+                          <div class="section_button">
+                            <a
+                              class="btn primary green"
+                              href="/out_patient/records"
+                            >
+                              <i class="lni lni-plus"></i>
+                              <span>Generate</span>
+                            </a>
+                          </div>
+                          <div class="section_button">
+                            <a
+                              class="btn primary green"
+                              href="/out_patient/records"
+                            >
+                              <i class="lni lni-plus"></i>
+                              <span>Print</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-6">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>Date <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Charges Type <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>
+                        Charges Category <i class="lni lni-chevron-down"></i>
+                      </h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>
+                        Standard Charges <i class="lni lni-chevron-down"></i>
+                      </h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>TPA Charges <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>
+                        Applied Charges <i class="lni lni-chevron-down"></i>
+                      </h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-3">
+                        <p>12/12/2020</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Unknown</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Pregnacy tes</p>
+                      </div>
+                      <div class="body-3">
+                        <p>N400,000</p>
+                      </div>
+                      <div class="body-3">
+                        <p>N100,000</p>
+                      </div>
+                      <div class="body-3">
+                        <p>N10,000</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Charges</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-7">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Pay Mode <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Pay Date <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Paid Amount <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Online bank transfered</p>
+                      </div>
+                      <div class="body-3">
+                        <p>1/12/2021</p>
+                      </div>
+                      <div class="body-3">
+                        <p>400,000</p>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Payment</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-8">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>Date <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>
+                        Care Provider <i class="lni lni-chevron-down"></i>
+                      </h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Medicine <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-4">
+                      <h3>Dosage <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-5">
+                      <h3>Note <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="highlight">
+                      <div class="table_body" id="chart_toggler" data-chart="1">
+                        <div class="body-1">
+                          <p>1/12/2021</p>
+                        </div>
+                        <div class="body-2">
+                          <p>Nurse Elovine</p>
+                        </div>
+                        <div class="body-3">
+                          <p>analgesis</p>
+                        </div>
+                        <div class="body-3">
+                          <p>34 / day</p>
+                        </div>
+                        <div class="body-3">
+                          <p>funny and dramatic patient</p>
+                        </div>
+                        <div class="action-icons"></div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-1">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2020 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Kemi Olamide</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>10 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-1">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2020 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Kemi Olamide</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>10 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-1">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2020 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Kemi Olamide</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>10 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-1">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2020 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Kemi Olamide</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>10 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="highlight">
+                      <div class="table_body" id="chart_toggler" data-chart="2">
+                        <div class="body-1">
+                          <p>1/01/2021</p>
+                        </div>
+                        <div class="body-2">
+                          <p>Nurse Elovine</p>
+                        </div>
+                        <div class="body-3">
+                          <p>analgesis</p>
+                        </div>
+                        <div class="body-3">
+                          <p>34 / day</p>
+                        </div>
+                        <div class="body-3">
+                          <p>funny and dramatic patient</p>
+                        </div>
+                        <div class="action-icons"></div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-2">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2021 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Princess Joe</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>20 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-2">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2021 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Princess Joe</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>20 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="table_body chart" id="chart-content-2">
+                        <div class="body-1">
+                          <p>
+                            <input
+                              type="checkbox"
+                              checked
+                              disabled
+                              id="chartCheck"
+                            />
+                            <label for="chartCheck"></label>
+                          </p>
+                        </div>
+                        <div class="body-2">
+                          <div class="list">
+                            <p>Date & Time:</p>
+                          </div>
+                          <p>29/18/2021 9:00am</p>
+                        </div>
+                        <div class="body-3">
+                          <div class="list">
+                            <p>Given by:</p>
+                          </div>
+                          <p>Nur. Princess Joe</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Dosage:</p>
+                          </div>
+                          <p>20 Daily</p>
+                        </div>
+                        <div class="body-4">
+                          <div class="list">
+                            <p>Remarks:</p>
+                          </div>
+                          <p>coming soooooon......</p>
+                        </div>
+                        <div class="action-icons">
+                          <i class="lni lni-pencil-alt"></i>
+                          <i class="lni lni-trash"></i>
+                        </div>
+                      </div>
+                      <div class="section_button">
+                        <a
+                          class="btn primary green"
+                          href="/out_patient/records"
+                        >
+                          <i class="lni lni-plus"></i>
+                          <span>Add Prescription</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-9">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Report Date <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Report Type <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Description <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>1/12/2021</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Pregnacy tes</p>
+                      </div>
+                      <div class="body-3">
+                        <p>
+                          It we dianosis her for pregnacy test for she is not
+                          pregnant yet
+                        </p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Diagnosis</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab-content-10">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>
+                        Instruction by <i class="lni lni-chevron-down"></i>
+                      </h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Description <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Nurse Kemi</p>
+                      </div>
+                      <div class="body-3">
+                        <p>1/12/2021 18:20pm</p>
+                      </div>
+                      <div class="body-3">
+                        <p>
+                          It we dianosis her for pregnacy test for she is not
+                          pregnant yet
+                        </p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Instruction</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-inner" id="tab-content-11">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Complain <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>yellow headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Present Complain</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-inner" id="tab-content-12">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Complain <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>yellow headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add History of Presenting</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-inner" id="tab-content-13">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Complain <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>yellow headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Past Medical History</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-inner" id="tab-content-14">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Complain <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>yellow headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add Family Social History</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-inner" id="tab-content-15">
+                  <div class="table_tabs lighter20">
+                    <div class="tab-11 active" id="tab-step-2" data-tab="16">
+                      <h3><i class="lni lni-first-aid"></i> General</h3>
+                    </div>
+                    <div class="tab-12 tab-fluid" id="tab-step-2" data-tab="17">
+                      <h3><i class="lni lni-users"></i> CNS</h3>
+                    </div>
+                    <div class="tab-13 tab-fluid" id="tab-step-2" data-tab="18">
+                      <h3><i class="lni lni-microscope"></i> Head & Neck</h3>
+                    </div>
+                    <div class="tab-14 tab-fluid" id="tab-step-2" data-tab="19">
+                      <h3><i class="lni lni-capsule"></i> Chest</h3>
+                    </div>
+                    <div class="tab-15 tab-fluid" id="tab-step-2" data-tab="20">
+                      <h3><i class="lni lni-graph"></i> Abdomen</h3>
+                    </div>
+                    <div class="tab-16 tab-fluid" id="tab-step-2" data-tab="21">
+                      <h3><i class="lni lni-graph"></i> MSS</h3>
+                    </div>
+                    <div class="tab-17 tab-fluid" id="tab-step-2" data-tab="22">
+                      <h3><i class="lni lni-graph"></i> Urogential</h3>
+                    </div>
+                    <div class="tab-18 tab-fluid" id="tab-step-2" data-tab="23">
+                      <h3><i class="lni lni-graph"></i> PR</h3>
+                    </div>
+                    <div class="tab-19 tab-fluid" id="tab-step-2" data-tab="24">
+                      <h3><i class="lni lni-graph"></i> VE</h3>
+                    </div>
+                    <div class="tab-20 tab-fluid" id="tab-step-2" data-tab="25">
+                      <h3><i class="lni lni-graph"></i> VAF</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-16">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-17">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-18">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-19">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-20">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-21">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remarks <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-22">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-23">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-24">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content tab-content-step" id="tab-content-25">
+                  <div class="table_header">
+                    <div class="head-1">
+                      <h3>S/N <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-2">
+                      <h3>Date & Time <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Observation <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-3">
+                      <h3>Remark <i class="lni lni-chevron-down"></i></h3>
+                    </div>
+                    <div class="head-6">
+                      <h3>
+                        Action
+                        <i class="lni lni-more toolTip">
+                          <span class="toolTipText">
+                            <h3>Hello, world</h3>
+                            <a href="#">link</a>
+                          </span>
+                        </i>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="table_content">
+                    <div class="table_body">
+                      <div class="body-1">
+                        <p>1</p>
+                      </div>
+                      <div class="body-3">
+                        <p>12/20/2020 9:10am</p>
+                      </div>
+                      <div class="body-2">
+                        <p>Having headache</p>
+                      </div>
+                      <div class="body-3">
+                        <p>Resolved</p>
+                      </div>
+                      <div class="action-icons">
+                        <i class="lni lni-pencil-alt"></i>
+                        <i class="lni lni-trash"></i>
+                      </div>
+                    </div>
+                    <div class="section_button">
+                      <a class="btn primary green" href="/out_patient/records">
+                        <i class="lni lni-plus"></i>
+                        <span>Add</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------------------------->
+      <!------------------- CONTENT ENDS ------------------>
+      <!--------------------------------------------------->
+
+      <!--------------------------------------------------->
+      <!------------------- FOOTER------------------------->
+      <!--------------------------------------------------->
+      <div class="bottom">
+        <footer class="theme_text">
+          CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved.
+        </footer>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms Of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="hamburger_menu">
+        <img src="./public/assets/icons/hamburger.svg" id="hamburger" alt="" />
+      </div>
+    </div>
+
+    <script defer src="./scripts/theme.js"></script>
+    <script src="./public/scripts/chart.min.js"></script>
+    <script src="./public/scripts/fontawesome.min.js"></script>
+    <script src="./public/scripts/add_patient.js"></script>
+    <script src="./public/scripts/records.js"></script>
+    <script src="./public/scripts/main.js"></script>
+    <script src="./public/scripts/chart.js"></script>
+    <script src="./public/scripts/patient.js"></script>
+  </body>
+</html>

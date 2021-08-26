@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Cliniqueplus Dashboard</title>
+    <!-- LINEICONS -->
+    <link rel="stylesheet" href="./public/styles/msg.css" />
+    <link rel="stylesheet" href="./public/styles/records.css" />
+    <link rel="stylesheet" href="./public/styles/patient.css" />
+    <link rel="stylesheet" href="./public/styles/media_query.css" />
+    <link rel="stylesheet" href="./public/styles/circle.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./public/assets/font/LineIcons/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css"
+    />
+  </head>
+  <!-- ---------------------- -->
+  <!-- --------[MODAL]------- -->
+  <!-- ---------------------- -->
+  <div class="modal_container" id="modal_container">
+    <div class="modal trigger modal_box">
+      <div class="modal_header">
+        <button class="modal_cnl" id="modal_cnl">X</button>
+        <h3>Available Bed Spaces</h3>
+        <!-- <p>Red colors are filled while green color are empty</p> -->
+      </div>
+      <div class="modal_content">
+        <div class="modal_body header">
+          <h3>First Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>ICU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>HDU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body header">
+          <h3>Ground Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>Male Ward</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>Female Ward</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body header">
+          <h3>First Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>ICU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>HDU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+      <!-- Loader -->
+      <div class="wrap-loader">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">NOW LOADING</div>
+        </div>
+      </div>
+      <!-- /Loader -->
+    <div class="root">
+      <div class="left_panel night-color" id="left_toggle">
+        <div class="brand__logo" id="brand_logo">
+          <div class="logo">
+            <img
+              src="./public/assets/images/logo__brand.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+        </div>
+        <div class="primary-btn">
+          <div class="btn modal_toggle" id="primary_btn">
+            <i class="lni lni-layers"></i>
+            <a href="javascript:void()" id="btn__content">Bed Status</a>
+            <i class="lni lni-arrow-right"></i>
+          </div>
+        </div>
+        <ul class="navbar" id="navbar">
+          <li class="nav_list nav___active" id="nav_list">
+            <i class="lni lni-first-aid"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Front Office
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Visitor Book</a></li>
+            <li><a href="#">Complain</a></li>
+            <li><a href="#">Call Logs</a></li>
+            <li><a href="#">Postal</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-sthethoscope"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >HIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="/out-patient">OPD</a></li>
+            <li><a href="/in-patient">IPD</a></li>
+            <li><a href="#">ICU</a></li>
+            <li><a href="#">Operation Theatre</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-drop"></i
+            ><a id="nav_link" class="nav_link" href="#">Blood Bank</a>
+          </li>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-world-alt"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >LIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Order</a></li>
+            <li><a href="#">QC</a></li>
+            <li><a href="#">Phleb</a></li>
+            <li><a href="#">Analysers</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-pulse"></i
+            ><a id="nav_link" class="nav_link" href="#">RIS</a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-heart"></i
+            ><a id="nav_link" class="nav_link" href="#">Cardiology</a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-wallet"></i
+            ><a id="nav_link" class="nav_link" href="#">Finance</a>
+          </li>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-capsule"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >PIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Dispense</a></li>
+            <li><a href="#">Stocks</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-shield"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Admin
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">HR</a></li>
+            <li><a href="#">Inventory</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-bar-chart"></i
+            ><a id="nav_link" class="nav_link" href="/records"
+              >Records
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Patients</a></li>
+            <li><a href="/add_patient">Diseases</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Coding & Indexing</a></li>
+            <li><a href="#">All Patients</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-car"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Logistics <img class="drop__arr" id="drop__arr" src="" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <ul class="nav__footer">
+            <li><img src="./public/assets/icons/help.svg" alt=""><a id="nav_link" href="#">Help?</a></li>
+        </ul> -->
+      <div class="top_panel night-color">
+        <div class="cola" id="cola">
+          <img src="./public/assets/icons/cola.svg" alt="" />
+        </div>
+        <div class="brand__logo-mobile">
+          <img
+            src="./public/assets/images/logo__brand.png"
+            alt=""
+            class="img__mobile"
+          />
+          <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+        </div>
+        <!-- <div class="user_sniper-mobile">
+                <div class="avatar" id="user__snippet__arr">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div>
+            </div> -->
+        <div class="search_main">
+          <form action="/" method="get">
+            <div class="search_len">
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="./public/assets/icons/search_len2.svg"
+                />
+                <source
+                  media="(max-width: 465px)"
+                  srcset="./public/assets/icons/search_len2.svg"
+                />
+                <img src="./public/assets/icons/25.svg" alt="a cute kitten" />
+              </picture>
+            </div>
+            <input
+              type="text"
+              id="search_input"
+              placeholder="Search for patient"
+            />
+          </form>
+        </div>
+        <div class="user_sniper">
+          <button class="notif active" id="MsgCont">
+            <i class="lni lni-alarm"></i>
+            <!-- ----------------------------------------- -->
+            <!-- ------------[NOTIFICATION MSG]----------- -->
+            <!-- --------------------------------------------->
+            <div class="msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- ------------[NOTIFICATION MSG END]----------- -->
+            <!-- --------------------------------------------->
+          </button>
+          <button class="msg" id="MsgCont">
+            <i class="lni lni-envelope"></i>
+            <div class="msgContent" id="msgContent">
+              <h2>Hello 2</h2>
+            </div>
+          </button>
+          <button class="full-screen" id="full-screen">
+            <i class="lni lni-full-screen"></i>
+          </button>
+          <!-- <div class="avatar">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div> -->
+          <button class="user_menu msg" id="MsgCont">
+            <img
+              src="./public/assets/images/avatar.png"
+              class="mobile__avatar-img"
+              alt=""
+              srcset=""
+            />
+            <div class="user_menu msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/setup.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Setup</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/reports.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Reports</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/profile.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Profile</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/logout.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="username">
+            <h3 class="theme_text">Samson Monday</h3>
+          </div>
+          <!-- <div class="drop_arr" id="user__snippet__arr">
+                    <img src="./public/assets/icons/28.svg" alt="" srcset="">
+                </div> -->
+          <button class="user_menu msg arr" id="MsgCont">
+            <img src="./public/assets/icons/28.svg" alt="" srcset="" />
+            <div class="user_menu msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/setup.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Setup</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/reports.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Reports</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/profile.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Profile</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/logout.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="theme__color" id="theme_changer">
+        <img class="nav__icon" src="./public/assets/icons/10.svg" alt="" />
+      </div>
+
+      <div class="content">
+        <div class="breadcrumb night-color">
+          <ul>
+            <li><a href="/">/</a></li>
+            <li><a href="/patient">patient</a></li>
+            <li><a href="/add_patient">/add patient</a></li>
+          </ul>
+        </div>
+        <form
+          action="/"
+          method="POST"
+          autocomplete="off"
+          class="patient__form-container night-color"
+        >
+          <div class="form__header">
+            <h2 id="header_title">Patient Identity Information</h2>
+            <p>Fill the patient information in the fields provided below</p>
+          </div>
+
+          <div class="form_slider_controller">
+            <!-- <div class="msg_status success">
+            <span>Please fill all required * filled</span>
+        </div> -->
+            <div class="form_slider" id="form_slider">
+              <!-- --------------------------------- -->
+              <!--------------- FORM 1 ---------------->
+              <!-- --------------------------------- -->
+              <div class="patient__form form-1" id="form-1">
+                <div class="form__status">
+                  <div class="status">
+                    <div class="step-1 active"></div>
+                    <div class="step-2"></div>
+                    <div class="step-3"></div>
+                    <div class="step-4"></div>
+                    <div class="step-5"></div>
+                    <div class="step-6"></div>
+                  </div>
+                </div>
+                <div class="form_container">
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="firstname"
+                        name="firstname"
+                        class="required"
+                        placeholder="Enter patient first name"
+                      />
+                      <img src="./public/assets/icons/user_icon.svg" />
+                      <label for="firstname">First Name <span>*</span></label>
+                    </div>
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        class="required"
+                        placeholder="Enter patient last name"
+                      />
+                      <img src="./public/assets/icons/user_icon.svg" />
+
+                      <label for="lastname">Last Name <span>*</span></label>
+                    </div>
+                  </div>
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        placeholder="Enter patient surname"
+                      />
+                      <img src="./public/assets/icons/user_icon.svg" />
+                      <label for="surname">Surname</label>
+                    </div>
+                    <div class="form_wrap">
+                      <select
+                        type="text"
+                        id="gender"
+                        name="gender"
+                        class="required"
+                      >
+                        <option value="" disabled selected>
+                          Select patient gender
+                        </option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="gender">Gender <span>*</span></label>
+                    </div>
+                  </div>
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="required"
+                        placeholder="Enter patient email address"
+                      />
+                      <img src="./public/assets/icons/input_envelope.svg" />
+                      <label for="email">Email Address</label>
+                    </div>
+                    <div class="form_wrap">
+                      <input
+                        type="number"
+                        id="phone"
+                        name="phone"
+                        class="required"
+                        placeholder="Enter patient phone number"
+                      />
+                      <img src="./public/assets/icons/input_phone.svg" />
+                      <label for="phone">Phone Number <span>*</span></label>
+                    </div>
+                  </div>
+
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <select id="blood" name="blood">
+                        <option value="" selected disabled>
+                          Select patient blood group
+                        </option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>AB+</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="blood">Bloog Group</label>
+                    </div>
+                    <div class="form_wrap">
+                      <select name="genetype" id="genetype">
+                        <option value="" selected disabled>
+                          Select patient genetype
+                        </option>
+                        <option>AA</option>
+                        <option>AS Negative</option>
+                        <option>AC Unknown</option>
+                        <option>Others</option>
+                        <option>B Negative</option>
+                        <option>B Unknown</option>
+                        <option>AB Positive</option>
+                        <option>AB Negative</option>
+                        <option>AB Unknown</option>
+                        <option>O Positive</option>
+                        <option>O Negative</option>
+                        <option>O Unknown</option>
+                        <option>Unknown</option>
+                      </select>
+                      <label for="genetype">Genetype</label>
+                      <img src="./public/assets/icons/input_select.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------------------------- -->
+              <!--------------- FORM 2 ---------------->
+              <!-- --------------------------------- -->
+              <div class="patient__form form-2" id="form-2">
+                <div class="form__status">
+                  <div class="status">
+                    <div class="step-1 active"></div>
+                    <div class="step-2 active"></div>
+                    <div class="step-3"></div>
+                    <div class="step-4"></div>
+                    <div class="step-5"></div>
+                    <div class="step-6"></div>
+                  </div>
+                </div>
+                <div class="form_container">
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="address"
+                        class="required"
+                        name="address"
+                        placeholder="Enter patient current address"
+                      />
+                      <img src="./public/assets/icons/map_marker.svg" />
+                      <label for="address">Address</label>
+                    </div>
+                  </div>
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="permanent_address"
+                        class="required"
+                        name="permanent_address"
+                        placeholder="Enter patient permanent address"
+                      />
+                      <img src="./public/assets/icons/map_marker.svg" />
+                      <label for="permanent_address">Permanent Address</label>
+                    </div>
+                  </div>
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <select name="state" id="state">
+                        <option value="" selected="selected" disabled>
+                          Select state of origin
+                        </option>
+                        <option value="Abuja">Abuja FCT</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nassarawa">Nassarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                        <option value="Outside Nigeria">Outside Nigeria</option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="state">State of Origin <span>*</span></label>
+                    </div>
+                    <div class="form_wrap">
+                      <select name="city" id="city">
+                        <option value="" disabled selected>
+                          Please select patient state first
+                        </option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="city">LGA <span>*</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------------------------- -->
+              <!--------------- FORM 3 ---------------->
+              <!-- --------------------------------- -->
+              <div class="patient__form form-3" id="form-3">
+                <div class="form__status">
+                  <div class="status">
+                    <div class="step-1 active"></div>
+                    <div class="step-2 active"></div>
+                    <div class="step-3 active"></div>
+                    <div class="step-4"></div>
+                    <div class="step-5"></div>
+                    <div class="step-6"></div>
+                  </div>
+                </div>
+                <div class="form_container">
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <select type="text" id="insurance" name="insurance">
+                        <option value="" disabled selected>
+                          Select patience insurance
+                        </option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="insurance">Insurance</label>
+                    </div>
+                  </div>
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <textarea
+                        name="note"
+                        id="note"
+                        placeholder="Enter remarks* here"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------------------------- -->
+              <!--------------- FORM 4 ---------------->
+              <!-- --------------------------------- -->
+              <div class="patient__form form-4" id="form-4">
+                <div class="form__status">
+                  <div class="status">
+                    <div class="step-1 active"></div>
+                    <div class="step-2 active"></div>
+                    <div class="step-3 active"></div>
+                    <div class="step-4 active"></div>
+                    <div class="step-5"></div>
+                    <div class="step-6"></div>
+                  </div>
+                </div>
+                <div class="form_container">
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="allergis"
+                        name="allergis"
+                        placeholder="Enter patient allergis"
+                      />
+                      <img src="./public/assets/icons/user_icon.svg" />
+                      <label for="allergis">Allergis</label>
+                    </div>
+                    <div class="form_wrap">
+                      <select type="text" id="religion" name="religion">
+                        <option value="" disabled selected>
+                          select patient religion
+                        </option>
+                        <option value="Christain">Christain</option>
+                        <option value="Muslim">Muslim</option>
+                        <option value="Pegan">Pegan</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="lastname">Religion</label>
+                    </div>
+                  </div>
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <select id="occupation" name="occupation">
+                        <option value="" disabled selected>
+                          Enter patient patient occupation
+                        </option>
+                        <optgroup
+                          label="Healthcare Practitioners and Technical Occupations:"
+                        >
+                          <option value="Chiropractor">- Chiropractor</option>
+                          <option value="Dentist">- Dentist</option>
+                          <option value="Dietitian or Nutritionist">
+                            - Dietitian or Nutritionist
+                          </option>
+                          <option value="Optometrist">- Optometrist</option>
+                          <option value="Pharmacist">- Pharmacist</option>
+                          <option value="Physician">- Physician</option>
+                          <option value="Physician Assistant">
+                            - Physician Assistant
+                          </option>
+                          <option value="Podiatrist">- Podiatrist</option>
+                          <option value="Registered Nurse">
+                            - Registered Nurse
+                          </option>
+                          <option value="Therapist">- Therapist</option>
+                          <option value="Veterinarian">- Veterinarian</option>
+                          <option value="Health Technologist or Technician">
+                            - Health Technologist or Technician
+                          </option>
+                          <option
+                            value="Other Healthcare Practitioners and Technical Occupation"
+                          >
+                            - Other Healthcare Practitioners and Technical
+                            Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup label="Healthcare Support Occupations:">
+                          <option
+                            value="Nursing, Psychiatric, or Home Health Aide"
+                          >
+                            - Nursing, Psychiatric, or Home Health Aide
+                          </option>
+                          <option
+                            value="Occupational and Physical Therapist Assistant or Aide"
+                          >
+                            - Occupational and Physical Therapist Assistant or
+                            Aide
+                          </option>
+                          <option value="Other Healthcare Support Occupation">
+                            - Other Healthcare Support Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup
+                          label="Business, Executive, Management, and Financial Occupations:"
+                        >
+                          <option value="Chief Executive">
+                            - Chief Executive
+                          </option>
+                          <option value="General and Operations Manager">
+                            - General and Operations Manager
+                          </option>
+                          <option
+                            value="Advertising, Marketing, Promotions, Public Relations, and Sales Manager"
+                          >
+                            - Advertising, Marketing, Promotions, Public
+                            Relations, and Sales Manager
+                          </option>
+                          <option value="Operations Specialties Manager">
+                            - Operations Specialties Manager (e.g., IT or HR
+                            Manager)
+                          </option>
+                          <option value="Construction Manager">
+                            - Construction Manager
+                          </option>
+                          <option value="Engineering Manager">
+                            - Engineering Manager
+                          </option>
+                          <option value="Accountant, Auditor">
+                            - Accountant, Auditor
+                          </option>
+                          <option
+                            value="Business Operations or Financial Specialist"
+                          >
+                            - Business Operations or Financial Specialist
+                          </option>
+                          <option value="Business Owner">
+                            - Business Owner
+                          </option>
+                          <option
+                            value="Other Business, Executive, Management, Financial Occupation"
+                          >
+                            - Other Business, Executive, Management, Financial
+                            Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup
+                          label="Architecture and Engineering Occupations:"
+                        >
+                          <option value="Architect, Surveyor, or Cartographer">
+                            - Architect, Surveyor, or Cartographer
+                          </option>
+                          <option value="Engineer">- Engineer</option>
+                          <option
+                            value="Other Architecture and Engineering Occupation"
+                          >
+                            - Other Architecture and Engineering Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup
+                          label="Education, Training, and Library Occupations:"
+                        >
+                          <option value="Postsecondary Teacher">
+                            - Postsecondary Teacher (e.g., College Professor)
+                          </option>
+                          <option
+                            value="Primary, Secondary, or Special Education School Teacher"
+                          >
+                            - Primary, Secondary, or Special Education School
+                            Teacher
+                          </option>
+                          <option value="Other Teacher or Instructor">
+                            - Other Teacher or Instructor
+                          </option>
+                          <option
+                            value="Other Education, Training, and Library Occupation"
+                          >
+                            - Other Education, Training, and Library Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup label="Other Professional Occupations:">
+                          <option
+                            value="Arts, Design, Entertainment, Sports, and Media Occupations"
+                          >
+                            - Arts, Design, Entertainment, Sports, and Media
+                            Occupations
+                          </option>
+                          <option
+                            value="Computer Specialist, Mathematical Science"
+                          >
+                            - Computer Specialist, Mathematical Science
+                          </option>
+                          <option
+                            value="Counselor, Social Worker, or Other Community and Social Service Specialist"
+                          >
+                            - Counselor, Social Worker, or Other Community and
+                            Social Service Specialist
+                          </option>
+                          <option value="Lawyer, Judge">- Lawyer, Judge</option>
+                          <option value="Life Scientist">
+                            - Life Scientist (e.g., Animal, Food, Soil, or
+                            Biological Scientist, Zoologist)
+                          </option>
+                          <option value="Physical Scientist">
+                            - Physical Scientist (e.g., Astronomer, Physicist,
+                            Chemist, Hydrologist)
+                          </option>
+                          <option value="Religious Worker">
+                            - Religious Worker (e.g., Clergy, Director of
+                            Religious Activities or Education)
+                          </option>
+                          <option value="Social Scientist and Related Worker">
+                            - Social Scientist and Related Worker
+                          </option>
+                          <option value="Other Professional Occupation">
+                            - Other Professional Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup
+                          label="Office and Administrative Support Occupations:"
+                        >
+                          <option
+                            value="Supervisor of Administrative Support Workers"
+                          >
+                            - Supervisor of Administrative Support Workers
+                          </option>
+                          <option value="Financial Clerk">
+                            - Financial Clerk
+                          </option>
+                          <option value="Secretary or Administrative Assistant">
+                            - Secretary or Administrative Assistant
+                          </option>
+                          <option
+                            value="Material Recording, Scheduling, and Dispatching Worker"
+                          >
+                            - Material Recording, Scheduling, and Dispatching
+                            Worker
+                          </option>
+                          <option
+                            value="Other Office and Administrative Support Occupation"
+                          >
+                            - Other Office and Administrative Support Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup label="Services Occupations:">
+                          <option value="Protective Service">
+                            - Protective Service (e.g., Fire Fighting, Police
+                            Officer, Correctional Officer)
+                          </option>
+                          <option value="Chef or Head Cook">
+                            - Chef or Head Cook
+                          </option>
+                          <option value="Cook or Food Preparation Worker">
+                            - Cook or Food Preparation Worker
+                          </option>
+                          <option value="Food and Beverage Serving Worker">
+                            - Food and Beverage Serving Worker (e.g., Bartender,
+                            Waiter, Waitress)
+                          </option>
+                          <option
+                            value="Building and Grounds Cleaning and Maintenance"
+                          >
+                            - Building and Grounds Cleaning and Maintenance
+                          </option>
+                          <option value="Personal Care and Service">
+                            - Personal Care and Service (e.g., Hairdresser,
+                            Flight Attendant, Concierge)
+                          </option>
+                          <option value="Sales Supervisor, Retail Sales">
+                            - Sales Supervisor, Retail Sales
+                          </option>
+                          <option value="Retail Sales Worker">
+                            - Retail Sales Worker
+                          </option>
+                          <option value="Insurance Sales Agent">
+                            - Insurance Sales Agent
+                          </option>
+                          <option value="Sales Representative">
+                            - Sales Representative
+                          </option>
+                          <option value="Real Estate Sales Agent">
+                            - Real Estate Sales Agent
+                          </option>
+                          <option value="Other Services Occupation">
+                            - Other Services Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup
+                          label="Agriculture, Maintenance, Repair, and Skilled Crafts Occupations:"
+                        >
+                          <option value="Construction and Extraction">
+                            - Construction and Extraction (e.g., Construction
+                            Laborer, Electrician)
+                          </option>
+                          <option value="Farming, Fishing, and Forestry">
+                            - Farming, Fishing, and Forestry
+                          </option>
+                          <option value="Installation, Maintenance, and Repair">
+                            - Installation, Maintenance, and Repair
+                          </option>
+                          <option value="Production Occupations">
+                            - Production Occupations
+                          </option>
+                          <option
+                            value="Other Agriculture, Maintenance, Repair, and Skilled Crafts Occupation"
+                          >
+                            - Other Agriculture, Maintenance, Repair, and
+                            Skilled Crafts Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup label="Transportation Occupations:">
+                          <option value="Aircraft Pilot or Flight Engineer">
+                            - Aircraft Pilot or Flight Engineer
+                          </option>
+                          <option value="Motor Vehicle Operator">
+                            - Motor Vehicle Operator (e.g., Ambulance, Bus,
+                            Taxi, or Truck Driver)
+                          </option>
+                          <option value="Transportation Occupation">
+                            - Other Transportation Occupation
+                          </option>
+                        </optgroup>
+                        <optgroup label="Other Occupations:">
+                          <option value="Military">- Military</option>
+                          <option value="Homemaker">- Homemaker</option>
+                          <option value="Other Occupation">
+                            - Other Occupation
+                          </option>
+                        </optgroup>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="lastname">Occupation</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------------------------- -->
+              <!--------------- FORM 5 ---------------->
+              <!-- --------------------------------- -->
+              <div class="patient__form form-5" id="form-5">
+                <div class="form__status">
+                  <div class="status">
+                    <div class="step-1 active"></div>
+                    <div class="step-2 active"></div>
+                    <div class="step-3 active"></div>
+                    <div class="step-4 active"></div>
+                    <div class="step-5 active"></div>
+                    <div class="step-6"></div>
+                  </div>
+                </div>
+                <div class="form_container">
+                  <div class="form_group">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="guardian_name"
+                        name="guardian_name"
+                        placeholder="Enter patient guardian name"
+                      />
+                      <img src="./public/assets/icons/user_icon.svg" />
+                      <label for="guardian_name"
+                        >Guardian Name <span>*</span></label
+                      >
+                    </div>
+                    <div class="form_wrap">
+                      <input
+                        type="number"
+                        id="guardian_number"
+                        name="guardian_number"
+                        placeholder="Enter patient gurdian phone number"
+                      />
+                      <img src="./public/assets/icons/input_phone.svg" />
+                      <label for="guardian_number"
+                        >Guardian Phone Number <span>*</span></label
+                      >
+                    </div>
+                  </div>
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="guardian_address"
+                        name="guardian_address"
+                        placeholder="Enter patient guardian address"
+                      />
+                      <img src="./public/assets/icons/map_marker.svg" />
+                      <label for="guardian_name"
+                        >Gurdian Address <span>*</span></label
+                      >
+                    </div>
+                  </div>
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <select id="relationship" name="relationship">
+                        <option value="" disabled selected>
+                          Select relationship
+                        </option>
+                        <option value="Family">Family</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <img src="./public/assets/icons/input_select.svg" />
+                      <label for="guardian_name"
+                        >Relationship <span>*</span></label
+                      >
+                    </div>
+                  </div>
+                  <div class="form_group single_input">
+                    <div class="form_wrap">
+                      <input
+                        type="text"
+                        id="next_kin"
+                        name="next_kin"
+                        placeholder="Enter patient next of kin"
+                      />
+                      <img src="./public/assets/icons/user_icon.svg" />
+                      <label for="next_kin">Next of Kin</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------------------------- -->
+              <!--------------- FORM 6 ---------------->
+              <!-- --------------------------------- -->
+              <div class="patient__form form-6" id="form-6">
+                <div class="form__status">
+                  <div class="status last">
+                    <div class="step-1 active"></div>
+                    <div class="step-2 active"></div>
+                    <div class="step-3 active"></div>
+                    <div class="step-4 active"></div>
+                    <div class="step-5 active"></div>
+                    <div class="step-6 active"></div>
+                  </div>
+                </div>
+                <div class="form_container patient_img_upload">
+                  <h2 class="theme_text">Choose a Patient Photo to Upload</h2>
+                  <div class="upload_area" id="upload_area">
+                    <div class="upload_content">
+                      <img
+                        src="./public/assets/icons/upload.svg"
+                        alt="Upload Image Icon"
+                      />
+                      <h2 id="upload_text">Drag & Drop File Here to Upload</h2>
+                      <span>OR</span>
+                      <button id="img_upload_btn">Click to upload</button>
+                      <input type="file" id="patient_img_upload" hidden />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_group" id="btn_container">
+            <button class="prev_btn" id="prev_btn">
+              <img
+                src="./public/assets/icons/bck_arrow.svg"
+                alt="bck arrow"
+              />Back
+            </button>
+            <button class="nxt_btn" id="nxt_btn">
+              Continue<img
+                src="./public/assets/icons/nxt_arrow.svg"
+                alt="nxt arrow"
+              />
+            </button>
+          </div>
+          <a href="/patient" class="cnl_btn">Cancel Registration</a>
+        </form>
+      </div>
+
+      <div class="bottom">
+        <footer class="theme_text">
+          CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved.
+        </footer>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms Of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="hamburger_menu">
+        <img src="./public/assets/icons/hamburger.svg" id="hamburger" alt="" />
+      </div>
+    </div>
+
+    <script defer src="./public/scripts/theme.js"></script>
+    <script src="./public/scripts/chart.min.js"></script>
+    <script src="./public/scripts/fontawesome.min.js"></script>
+    <script src="./public/scripts/add_patient.js"></script>
+    <script src="./public/scripts/records.js"></script>
+    <script src="./public/scripts/main.js"></script>
+    <script src="./public/scripts/chart.js"></script>
+    <script src="./public/scripts/patient.js"></script>
+  </body>
+</html>

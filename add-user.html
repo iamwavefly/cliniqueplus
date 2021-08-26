@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Cliniqueplus Dashboard</title>
+    <!-- LINEICONS -->
+    <link rel="stylesheet" href="./public/styles/auth.css" />
+    <link rel="stylesheet" href="./public/styles/multi-step-form.css" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./public/assets/font/LineIcons/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css"
+    />
+    <link rel="stylesheet" href="./public/styles/Components/modal.css" />
+  </head>
+  <!-- ---------------------- -->
+  <!-- --------[MODAL]------- -->
+  <!-- ---------------------- -->
+  <div class="modal_container" id="modal_container">
+    <div class="modal trigger modal_box">
+      <div class="modal_header">
+        <button class="modal_cnl" id="modal_cnl">X</button>
+        <h3>Available Bed Spaces</h3>
+        <!-- <p>Red colors are filled while green color are empty</p> -->
+      </div>
+      <div class="modal_content">
+        <div class="modal_body header">
+          <h3>First Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>ICU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>HDU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body header">
+          <h3>Ground Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>Male Ward</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>Female Ward</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body header">
+          <h3>First Floor</h3>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>ICU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+          <div class="bed-5">
+            <span>Bed</span>
+          </div>
+        </div>
+        <div class="modal_body sub-header">
+          <h3>HDU</h3>
+        </div>
+        <div class="modal_body bed">
+          <div class="bed-1 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-2 open">
+            <span>Bed</span>
+          </div>
+          <div class="bed-3">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>New</span>
+          </div>
+          <div class="bed-3">
+            <span>Lin</span>
+          </div>
+          <div class="bed-4">
+            <div class="tooltip">
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+              <span>Hello</span>
+            </div>
+            <span>Bed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+      <!-- Loader -->
+      <div class="wrap-loader">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="text">NOW LOADING</div>
+        </div>
+      </div>
+      <!-- /Loader -->
+    <div class="root">
+      <div class="left_panel night-color" id="left_toggle">
+        <div class="brand__logo" id="brand_logo">
+          <div class="logo">
+            <img
+              src="./public/assets/images/logo__brand.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+        </div>
+        <div class="primary-btn">
+          <div class="btn modal_toggle" id="primary_btn">
+            <i class="lni lni-layers"></i>
+            <a href="javascript:void()" id="btn__content">Bed Status</a>
+            <i class="lni lni-arrow-right"></i>
+          </div>
+        </div>
+        <ul class="navbar" id="navbar">
+          <li class="nav_list nav___active" id="nav_list">
+            <i class="lni lni-first-aid"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Front Office
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Visitor Book</a></li>
+            <li><a href="#">Complain</a></li>
+            <li><a href="#">Call Logs</a></li>
+            <li><a href="#">Postal</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-sthethoscope"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >HIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="/out-patient">OPD</a></li>
+            <li><a href="/in-patient">IPD</a></li>
+            <li><a href="#">ICU</a></li>
+            <li><a href="#">Operation Theatre</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-drop"></i
+            ><a id="nav_link" class="nav_link" href="#">Blood Bank</a>
+          </li>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-world-alt"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >LIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Order</a></li>
+            <li><a href="#">QC</a></li>
+            <li><a href="#">Phleb</a></li>
+            <li><a href="#">Analysers</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-pulse"></i
+            ><a id="nav_link" class="nav_link" href="#">RIS</a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-heart"></i
+            ><a id="nav_link" class="nav_link" href="#">Cardiology</a>
+          </li>
+          <li class="nav_list">
+            <i class="lni lni-wallet"></i
+            ><a id="nav_link" class="nav_link" href="#">Finance</a>
+          </li>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-capsule"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >PIS
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">Dispense</a></li>
+            <li><a href="#">Stocks</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-shield"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Admin
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="#">HR</a></li>
+            <li><a href="#">Inventory</a></li>
+          </ul>
+          <li class="nav_list" id="nav_list">
+            <i class="lni lni-bar-chart"></i
+            ><a id="nav_link" class="nav_link" href="/records"
+              >Records
+              <img
+                class="drop__arr"
+                id="drop__arr"
+                src="./public/assets/icons/front-arrow.svg"
+                alt=""
+            /></a>
+          </li>
+          <ul class="drop__nav" id="drop__nav">
+            <li><a href="/add_patient">Add Patient</a></li>
+            <li><a href="#">HMO</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Coding & Indexing</a></li>
+            <li><a href="#">All Patients</a></li>
+          </ul>
+          <li class="nav_list">
+            <i class="lni lni-car"></i
+            ><a id="nav_link" class="nav_link" href="#"
+              >Logistics <img class="drop__arr" id="drop__arr" src="" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <ul class="nav__footer">
+            <li><img src="./public/assets/icons/help.svg" alt=""><a id="nav_link" href="#">Help?</a></li>
+        </ul> -->
+      <div class="top_panel night-color">
+        <div class="cola" id="cola">
+          <img src="./public/assets/icons/cola.svg" alt="" />
+        </div>
+        <div class="brand__logo-mobile">
+          <img
+            src="./public/assets/images/logo__brand.png"
+            alt=""
+            class="img__mobile"
+          />
+          <h3 id="logo__content" class="theme_text">FakeDocs</h3>
+        </div>
+        <!-- <div class="user_sniper-mobile">
+                <div class="avatar" id="user__snippet__arr">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div>
+            </div> -->
+        <div class="search_main">
+          <form action="/facebook.com" method="GET">
+            <div class="search_len">
+              <picture>
+                <source
+                  media="(max-width: 650px)"
+                  srcset="./public/assets/icons/search_len2.svg"
+                />
+                <source
+                  media="(max-width: 465px)"
+                  srcset="./public/assets/icons/search_len2.svg"
+                />
+                <img src="./public/assets/icons/25.svg" alt="a cute kitten" />
+              </picture>
+            </div>
+            <input
+              type="text"
+              id="search_input"
+              placeholder="Search for patient"
+            />
+          </form>
+        </div>
+        <div class="user_sniper">
+          <button class="notif active" id="MsgCont">
+            <i class="lni lni-alarm"></i>
+            <!-- ----------------------------------------- -->
+            <!-- ------------[NOTIFICATION MSG]----------- -->
+            <!-- --------------------------------------------->
+            <div class="msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/images/avatar.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Hello, new update</h3>
+                  <span>&#128337;14min, ago</span>
+                  <p>new have a new update from mexico now</p>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------------------------------- -->
+            <!-- ------------[NOTIFICATION MSG END]----------- -->
+            <!-- --------------------------------------------->
+          </button>
+          <button class="msg" id="MsgCont">
+            <i class="lni lni-envelope"></i>
+            <div class="msgContent" id="msgContent">
+              <h2>Hello 2</h2>
+            </div>
+          </button>
+          <button class="full-screen" id="full-screen">
+            <i class="lni lni-full-screen"></i>
+          </button>
+          <!-- <div class="avatar">
+                    <img src="./public/assets/images/avatar.png" alt="" srcset="">
+                </div> -->
+          <button class="user_menu msg" id="MsgCont">
+            <img
+              src="./public/assets/images/avatar.png"
+              class="mobile__avatar-img"
+              alt=""
+              srcset=""
+            />
+            <div class="user_menu msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/setup.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Setup</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/reports.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Reports</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/profile.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Profile</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/logout.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+          <div class="username">
+            <h3 class="theme_text">Samson Monday</h3>
+          </div>
+          <!-- <div class="drop_arr" id="user__snippet__arr">
+                    <img src="./public/assets/icons/28.svg" alt="" srcset="">
+                </div> -->
+          <button class="user_menu msg arr" id="MsgCont">
+            <img src="./public/assets/icons/28.svg" alt="" srcset="" />
+            <div class="user_menu msgContent" id="msgContent">
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/setup.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Setup</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/reports.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Reports</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/profile.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Profile</h3>
+                </div>
+              </div>
+              <div class="message">
+                <div class="msg__avatar">
+                  <div class="avatar">
+                    <img
+                      src="./public/assets/icons/logout.svg"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+                <div class="msg__snippet">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="theme__color" id="theme_changer">
+        <img class="nav__icon" src="./public/assets/icons/10.svg" alt="" />
+      </div>
+
+      <div class="content">
+        <div class="formContainer regForm">
+          <form id="regForm" action="/facebook.com" aria-autocomplete="off">
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">
+              <h3 class="formHeader">Personal Information</h3>
+              <p class="subHeader">Fill your personal details below</p>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="fname"
+                    placeholder="First name"
+                    class="validate"
+                  />
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="lname"
+                    placeholder="Last name"
+                    oninput="this.className = ''"
+                  />
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="other_name"
+                    required
+                    name="other_name"
+                    placeholder="Other name"
+                    oninput="this.className = ''"
+                  />
+                  <label for="other_name">Other Name</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-calendar"></i>
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    required
+                    oninput="this.className = ''"
+                  />
+                  <!-- <label for="dob">Date of Birth</label> -->
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    id="martital_status"
+                    required
+                    name="relation"
+                    oninput="this.className = ''"
+                  >
+                    <option disabled selected>Select marital status</option>
+                    <option value="married">Married</option>
+                    <option value="single">Single</option>
+                  </select>
+                  <!-- <label for="martital_status">Martital Status</label> -->
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group hasCheckBox">
+                  <div class="checkbox">
+                    <span>Male:</span>
+                    <input type="radio" checked id="male" name="gender" />
+                    <label for="male"></label>
+                  </div>
+                  <div class="checkbox">
+                    <span>Female:</span>
+                    <input type="radio" id="female" name="gender" />
+                    <label class="ml-20" for="female"></label>
+                  </div>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="file"
+                    id="photo"
+                    name="photo"
+                    required
+                    placeholder="Upload photo"
+                    oninput="this.className = ''"
+                  />
+                  <label for="photo">Upload Photo</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="father_name"
+                    name="father_name"
+                    required
+                    placeholder="Father name"
+                    oninput="this.className = ''"
+                  />
+                  <label for="father_name">Father Name</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    name="mother_name"
+                    id="mother_name"
+                    required
+                    placeholder="Mother name"
+                    oninput="this.className = ''"
+                  />
+                  <label for="mother_name">Mother Name</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <h3 class="formHeader">Contact Details</h3>
+              <p class="subHeader">Fill your contact details below</p>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-map-marker"></i>
+                  <input
+                    type="text"
+                    id="current_address"
+                    name="current_address"
+                    required
+                    placeholder="Current address"
+                    oninput="this.className = ''"
+                  />
+                  <label for="current_address">Current Address</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-map-marker"></i>
+                  <input
+                    type="text"
+                    name="permanent_address"
+                    id="permanent_address"
+                    required
+                    placeholder="Permanent address"
+                    oninput="this.className = ''"
+                  />
+                  <label for="permanent_address">Permanent Address</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-map-marker"></i>
+                  <select
+                    id="state"
+                    name="state"
+                    required
+                    oninput="this.className = ''"
+                  >
+                    <option value="" selected="selected" disabled>
+                      Select state of origin
+                    </option>
+                    <option value="Abuja">Abuja FCT</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nassarawa">Nassarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                    <option value="Outside Nigeria">Outside Nigeria</option>
+                  </select>
+                  <label for="state_origin">State of Origin</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-map-marker"></i>
+                  <select
+                    name="lga"
+                    id="city"
+                    required
+                    oninput="this.className = ''"
+                  >
+                    <option value="" disabled selected>
+                      Please select patient state first
+                    </option>
+                  </select>
+                  <label for="state_origin">State of Origin</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="number"
+                    id="phone_number"
+                    required
+                    name="phone"
+                    placeholder="Current address"
+                    oninput="this.className = ''"
+                  />
+                  <label for="phone_number">Phone Number</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-envelope"></i>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Email addresss"
+                    oninput="this.className = ''"
+                  />
+                  <label for="email">Email Address</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="number"
+                    id="emergency_contact"
+                    required
+                    name="emergency_contact"
+                    placeholder="Emergency contact"
+                    oninput="this.className = ''"
+                  />
+                  <label for="emergency_contact">Emergency Contact</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <h3 class="formHeader">Office Department</h3>
+              <p class="subHeader">Fill the required Information below</p>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="staff_id"
+                    name="staff_id"
+                    required
+                    placeholder="Staff Id"
+                    oninput="this.className = ''"
+                  />
+                  <label for="staff_id">Staff ID</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    id="system_role"
+                    required
+                    name="role"
+                    oninput="this.className = ''"
+                  >
+                    <option disabled selected>Select system role</option>
+                    <option value="married">Ubuntu</option>
+                    <option value="single">Linux</option>
+                  </select>
+                  <label for="system_role">System Role</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    id="department"
+                    name="department"
+                    required
+                    oninput="this.className = ''"
+                  >
+                    <option disabled selected>Select department</option>
+                    <option value="married">marketer</option>
+                    <option value="single">Technical</option>
+                  </select>
+                  <label for="department">Department</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    name="designation"
+                    id="designation"
+                    required
+                    name="designation"
+                    oninput="this.className = ''"
+                  >
+                    <option value="" disabled selected>
+                      Select designation
+                    </option>
+                  </select>
+                  <label for="designation">Select designation</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    name="specialty"
+                    id="specialty"
+                    required
+                    oninput="this.className = ''"
+                  >
+                    <option value="" disabled selected>
+                      Select speciality
+                    </option>
+                  </select>
+                  <label for="designation">Select speciality</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    name="id_type"
+                    id="id_card_type"
+                    required
+                    oninput="this.className = ''"
+                  >
+                    <option value="" disabled selected>
+                      Select ID Card Type
+                    </option>
+                  </select>
+                  <label for="id_card_type">ID Card Type</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="id_no"
+                    name="id_no"
+                    required
+                    placeholder="ID No"
+                    oninput="this.className = ''"
+                  />
+                  <label for="id_no">ID No</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-wallet"></i>
+                  <input
+                    type="text"
+                    id="basic_salary"
+                    name="basic_salary"
+                    required
+                    placeholder="Basic Salary"
+                    oninput="this.className = ''"
+                  />
+                  <label for="basic_salary">Basic Salary</label>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <select
+                    id="employment_type"
+                    name="employment_type"
+                    required
+                    oninput="this.className = ''"
+                  >
+                    <option disabled selected>Select employment type</option>
+                    <option value="Contract">Contract</option>
+                    <option value="Permanent">Permanent</option>
+                  </select>
+                  <label for="employment_type">Employment Type</label>
+                </div>
+                <div class="form_group">
+                  <i class="lni lni-calendar"></i>
+                  <input
+                    type="date"
+                    id="doe"
+                    name="date_of_appointment"
+                    required
+                    oninput="this.className = ''"
+                  />
+                  <label for="doe">Date of Employment</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <h3 class="formHeader">Professional Details</h3>
+              <p class="subHeader">Fill your professional details below</p>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-lni-user"></i>
+                  <input
+                    type="text"
+                    name="certificate"
+                    id="certificate"
+                    required
+                    placeholder="Most recent certificate"
+                    oninput="this.className = ''"
+                  />
+                  <label for="certificate">Most Recent Certification</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-user"></i>
+                  <input
+                    type="text"
+                    id="school_attended"
+                    required
+                    name="school_attended"
+                    placeholder="School attended"
+                    oninput="this.className = ''"
+                  />
+                  <label for="school_attended">School Attended</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-calendar"></i>
+                  <input
+                    type="date"
+                    id="date_registration"
+                    name="date_registration"
+                    required
+                    oninput="this.className = ''"
+                  />
+                  <label for="date_registration">Date of Registration</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <h3 class="formHeader">Bank Details</h3>
+              <p class="subHeader">Fill your bank details below</p>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-calculator"></i>
+                  <input
+                    type="text"
+                    id="account_name"
+                    name="account_name"
+                    required
+                    placeholder="Account name"
+                    oninput="this.className = ''"
+                  />
+                  <label for="account_name">Account Name</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-money-location"></i>
+                  <input
+                    type="text"
+                    id="bank_name"
+                    name="bank_name"
+                    required
+                    placeholder="Bank name"
+                    oninput="this.className = ''"
+                  />
+                  <label for="bank_name">Bank Name</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-wallet"></i>
+                  <input
+                    type="number"
+                    id="account_number"
+                    required
+                    name="account_number"
+                    placeholder="Account number"
+                    oninput="this.className = ''"
+                  />
+                  <label for="account_number">Account Number</label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="form_group">
+                  <i class="lni lni-wallet"></i>
+                  <input
+                    type="number"
+                    name="bvn"
+                    id="bvn"
+                    required
+                    placeholder="bvn"
+                    oninput="this.className = ''"
+                  />
+                  <label for="bvn">BVN</label>
+                </div>
+              </div>
+            </div>
+            <div class="forget_password">
+              <label>Forgot password? <a href="#">click here</a></label>
+            </div>
+            <div style="overflow: auto">
+              <div style="float: right; display: flex">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                  Previous
+                </button>
+                <button
+                  style="margin-left: 10px"
+                  type="button"
+                  id="nextBtn"
+                  onclick="nextPrev(1)"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align: center; margin-top: 40px">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <footer class="theme_text">
+          CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved.
+        </footer>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms Of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="hamburger_menu">
+        <img src="./public/assets/icons/hamburger.svg" id="hamburger" alt="" />
+      </div>
+    </div>
+
+    <script src="./public/scripts/add_patient.js"></script>
+    <script src="./public/scripts/multiStepForm.js"></script>
+    <script defer src="./scripts/theme.js"></script>
+    <script src="./public/scripts/fontawesome.min.js"></script>
+    <script src="./public/scripts/records.js"></script>
+    <script src="./public/scripts/main.js"></script>
+    <script src="./public/scripts/patient.js"></script>
+    <script src="./public/scripts/components/modal.js"></script>
+  </body>
+</html>
