@@ -1,0 +1,331 @@
+.formContainer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  place-items: center;
+  background-color: #fff;
+}
+.formContainer.regForm {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.formSideBar {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 99, 52, 0.329),
+      rgb(129, 18, 21)
+    ),
+    url('../assets/images/nurse5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 0px 10px rgba(32, 2, 2, 0.1);
+}
+.formSideBar.login {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 99, 52, 0.329),
+      rgb(129, 18, 21)
+    ),
+    url('../assets/images/nurse5.jpg');
+}
+.formSideBar.resetPassword {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 99, 52, 0.329),
+      rgb(129, 18, 21)
+    ),
+    url('../assets/images/bg-5.jpg');
+}
+.formSideBar.changePassword {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 99, 52, 0.329),
+      rgb(129, 18, 21)
+    ),
+    url('../assets/images/bg-6.jpg');
+}
+.formSideBar .content {
+  width: 110%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  top: 18rem;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+.formSideBar .content h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.formSideBar .content p {
+  color: #fff;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.formSideBar .content a {
+  width: 50%;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 12px 45px;
+  opacity: 1;
+  transition: all 0.4s ease;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: 0 5px 10px rgba(10, 0, 0, 0.1);
+}
+.formSideBar .content a:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    #ff6434,
+    var(--primary-color)
+  );
+  border: 1px solid transparent;
+}
+.formHeader {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 24px;
+}
+.subHeader {
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.formWrapper {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.formContainer form {
+  position: relative;
+  height: 100%;
+  width: 80% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px !important;
+}
+.formContainer form .columns {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 10px;
+}
+.formContainer form .column {
+  margin: 0 auto;
+  width: 70%;
+}
+.formContainer form .form_group.hasCheckBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.formContainer form .columns .form_group i {
+  left: 6% !important;
+}
+.formContainer form .form_group {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.formContainer form .form_group label {
+  color: #555;
+  position: absolute;
+  opacity: 0;
+  left: 10%;
+  transform: translateY(0%);
+  padding: 0 10px;
+  transition: all 0.4s ease;
+}
+.formContainer form .column .form_group label {
+  left: 8%;
+}
+.formContainer form .form_group > i {
+  position: absolute;
+  left: 3%;
+  color: #888;
+  font-size: 16px;
+}
+.formContainer form .form_group input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  outline: none;
+  background-color: #f1f1f1;
+  padding: 0 45px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  transition: all 0.4s ease;
+}
+.formContainer form .form_group input:hover {
+  border: 1px solid var(--primary-color);
+}
+.formContainer form .form_group select:hover {
+  border: 1px solid var(--primary-color);
+}
+.formContainer form .form_group.photo {
+  position: relative;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 0 45px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer form .form_group.photo .label {
+  position: absolute !important;
+  left: 0;
+}
+.formContainer form .form_group select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  outline: none;
+  background-color: #f1f1f1;
+  padding: 0 45px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+}
+.formContainer form .form_group input.invalid {
+  background-color: #ffdddd;
+}
+.formContainer form select.invalid {
+  background-color: #ffdddd;
+}
+.formContainer form .form_group input:not(:placeholder-shown) ~ label {
+  transform: translateY(-120%);
+  background-color: #eee;
+  opacity: 1;
+  font-size: 12px;
+}
+.formContainer form .form_group input::placeholder {
+  font-size: 14px;
+  color: #acacac;
+}
+.forget_password {
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+.forget_password a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.formContainer form button {
+  width: 50%;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px 45px;
+  opacity: 1;
+  transition: all 0.4s ease;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right bottom,
+    #ff6434,
+    var(--primary-color)
+  );
+  box-shadow: 0 5px 10px rgba(10, 0, 0, 0.1);
+}
+.formContainer form button:hover {
+  opacity: 0.8;
+}
+.checkbox {
+  height: auto;
+  min-height: 40px;
+  padding-top: 10px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.checkbox label {
+  position: absolute;
+  left: 50% !important;
+  cursor: pointer;
+}
+.checkbox span {
+  font-size: 15px;
+  color: #555;
+}
+input[type='radio'] {
+  display: none;
+}
+input[type='radio'] ~ label::before {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ff6434;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+input[type='radio']:checked ~ label:after {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-image: linear-gradient(
+    to right bottom,
+    #ff6434,
+    var(--primary-color)
+  );
+  border-radius: 50%;
+}

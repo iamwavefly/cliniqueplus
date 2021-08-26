@@ -1,0 +1,34 @@
+.customTable {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: grid;
+  grid-auto-rows: 40px;
+}
+.customTable .tableColumn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.customTable .tableColumn.header {
+  background-color: #555 !important;
+}
+.customTable .tableColumn.header > * {
+  color: #fff;
+}
+.customTable .tableColumn:hover {
+  background-color: #fafafa;
+}
+.customTable .tableColumn:nth-child(even) {
+  background-color: rgba(189, 140, 140, 0.05);
+}
+.customTable .tableColumn > * {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
