@@ -502,7 +502,7 @@ input::placeholder{
     to right bottom,
     #50b813,
     var(--green-color)
-  );
+  ) !important;
   padding: 0 5px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
