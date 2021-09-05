@@ -3,113 +3,113 @@
 /* poppins-regular - latin-ext_latin */
 /* poppins-regular - latin-ext_latin */
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/font/poppins/poppins-v15-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/font/poppins/poppins-v15-latin-ext_latin-regular.eot?#iefix')
-      format('embedded-opentype'),
+  src: url("../assets/font/poppins/poppins-v15-latin-ext_latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/font/poppins/poppins-v15-latin-ext_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-regular.woff2')
-      format('woff2'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-regular.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-regular.woff')
-      format('woff'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-regular.woff")
+      format("woff"),
     /* Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-regular.ttf')
-      format('truetype'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-regular.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-regular.svg#Poppins')
-      format('svg'); /* Legacy iOS */
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-regular.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-500 - latin-ext_latin */
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url('../assets/font/poppins/poppins-v15-latin-ext_latin-500.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/font/poppins/poppins-v15-latin-ext_latin-500.eot?#iefix')
-      format('embedded-opentype'),
+  src: url("../assets/font/poppins/poppins-v15-latin-ext_latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/font/poppins/poppins-v15-latin-ext_latin-500.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-500.woff2')
-      format('woff2'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-500.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-500.woff')
-      format('woff'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-500.woff")
+      format("woff"),
     /* Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-500.ttf')
-      format('truetype'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-500.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-500.svg#Poppins')
-      format('svg'); /* Legacy iOS */
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-500.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-600 - latin-ext_latin */
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url('../assets/font/poppins/poppins-v15-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/font/poppins/poppins-v15-latin-ext_latin-600.eot?#iefix')
-      format('embedded-opentype'),
+  src: url("../assets/font/poppins/poppins-v15-latin-ext_latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/font/poppins/poppins-v15-latin-ext_latin-600.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-600.woff2')
-      format('woff2'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-600.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-600.woff')
-      format('woff'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-600.woff")
+      format("woff"),
     /* Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-600.ttf')
-      format('truetype'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-600.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-600.svg#Poppins')
-      format('svg'); /* Legacy iOS */
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-600.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-700 - latin-ext_latin */
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/font/poppins/poppins-v15-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/font/poppins/poppins-v15-latin-ext_latin-700.eot?#iefix')
-      format('embedded-opentype'),
+  src: url("../assets/font/poppins/poppins-v15-latin-ext_latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/font/poppins/poppins-v15-latin-ext_latin-700.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-700.woff2')
-      format('woff2'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-700.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-700.woff')
-      format('woff'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-700.woff")
+      format("woff"),
     /* Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-700.ttf')
-      format('truetype'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-700.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-700.svg#Poppins')
-      format('svg'); /* Legacy iOS */
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-700.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-800 - latin-ext_latin */
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  src: url('../assets/font/poppins/poppins-v15-latin-ext_latin-800.eot'); /* IE9 Compat Modes */
-  src: local(''),
-    url('../assets/font/poppins/poppins-v15-latin-ext_latin-800.eot?#iefix')
-      format('embedded-opentype'),
+  src: url("../assets/font/poppins/poppins-v15-latin-ext_latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/font/poppins/poppins-v15-latin-ext_latin-800.eot?#iefix")
+      format("embedded-opentype"),
     /* IE6-IE8 */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-800.woff2')
-      format('woff2'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-800.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-800.woff')
-      format('woff'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-800.woff")
+      format("woff"),
     /* Modern Browsers */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-800.ttf')
-      format('truetype'),
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-800.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../assets/font/poppins/poppins-v15-latin-ext_latin-800.svg#Poppins')
-      format('svg'); /* Legacy iOS */
+      url("../assets/font/poppins/poppins-v15-latin-ext_latin-800.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* --------{ROOT COLOR}---------- */
 :root {
@@ -136,7 +136,7 @@
 /* ---------{RESET BROWSER STYLE}---------- */
 body {
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--light-color-2);
   height: fit-content;
   overflow-x: none;
@@ -156,7 +156,7 @@ li {
 .ml-20 {
   margin-left: 20px !important;
 }
-.px{
+.px {
   padding: 0 20px !important;
 }
 .mt-10 {
@@ -184,7 +184,7 @@ li {
   background-color: var(--light-color);
 }
 hr {
-  border: var(--border)
+  border: var(--border);
 }
 .mt-5 {
   margin-top: 5px;
@@ -213,7 +213,7 @@ button {
 button:active {
   background-color: var(--hightlight-color);
 }
-input::placeholder{
+input::placeholder {
   color: var(--dark-color-3) !important;
 }
 /* components 
@@ -221,7 +221,7 @@ input::placeholder{
   uSEtHEcssAPPROPRIATE
 */
 /* LOADER SECTION BEGINS */
-.wrap-loader{
+.wrap-loader {
   position: absolute;
   background-color: #fff;
   height: 100%;
@@ -262,7 +262,7 @@ input::placeholder{
 }
 .bounceball::before {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   top: 0;
   width: 15px;
@@ -272,9 +272,9 @@ input::placeholder{
   transform-origin: 50%;
   animation: bounce 500ms alternate infinite ease;
 }
-.bounceball::after{
+.bounceball::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   width: 25px;
   height: 10px;
@@ -296,15 +296,15 @@ input::placeholder{
     top: 0;
   }
 }
-.wrap-loader-hidden{
+.wrap-loader-hidden {
   animation: animateOut 500ms forwards ease;
 }
 @keyframes animateOut {
-  0%{
+  0% {
     opacity: 1;
     visibility: visible;
   }
-  100%{
+  100% {
     opacity: 0;
     visibility: hidden;
   }
@@ -322,7 +322,7 @@ input::placeholder{
   opacity: 1;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   transition: all 0.2s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
@@ -425,7 +425,7 @@ input::placeholder{
   display: none;
 }
 .group > .checkbox input:checked ~ label::before {
-  content: '\2713';
+  content: "\2713";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -442,23 +442,23 @@ input::placeholder{
   );
   box-shadow: 0 5px 10px rgba(0, 35, 46, 0.05);
 }
-.text-primary{
-     /* Fallback: Set a background color. */
-     background-color: var(--primary-color);
-  
-     /* Create the gradient. */
-    background-image: linear-gradient(45deg, var(--primary-color), #ff7e34);
-     
-     /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-   
-     /* Use the text as a mask for the background. */
-     /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+.text-primary {
+  /* Fallback: Set a background color. */
+  background-color: var(--primary-color);
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, var(--primary-color), #ff7e34);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .bg-primary {
   color: #f1f1f1 !important;
@@ -830,7 +830,7 @@ input::placeholder{
   color: var(--primary-color-temp);
 }
 .nav__active::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -939,7 +939,7 @@ input::placeholder{
   margin: 0 auto;
 }
 /* topbar dropdown menu style */
-.menu_content{
+.menu_content {
   position: absolute;
   top: 110%;
   left: -250%;
@@ -957,25 +957,25 @@ input::placeholder{
   visibility: hidden;
   opacity: 0;
 }
-.menu_content::before{
+.menu_content::before {
   position: absolute;
   top: -1%;
   left: 40%;
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   background-color: var(--light-color-3);
   z-index: 9999;
   transform: rotate(45deg);
 }
-.menu_content > ul{
+.menu_content > ul {
   width: 100%;
   height: 80%;
   display: grid;
   grid-auto-rows: 50px;
   overflow: auto;
 }
-.menu_content > .menu_header{
+.menu_content > .menu_header {
   position: relative;
   background-color: var(--light-color-3);
   display: flex;
@@ -986,12 +986,12 @@ input::placeholder{
   border-bottom: 1px solid var(--light-color-2);
   box-shadow: 0 5px 10px rgba(10, 0, 0, 0.05);
 }
-.menu_content > .menu_header h3{
+.menu_content > .menu_header h3 {
   color: var(--dark-color);
   font-size: 15px;
 }
 
-.menu_content > .menu_header span{
+.menu_content > .menu_header span {
   background-image: linear-gradient(
     to right bottom,
     #ff6434,
@@ -1005,7 +1005,7 @@ input::placeholder{
   box-shadow: 0 5px 10px rgba(10, 0, 0, 0.05);
 }
 /* menu footer */
-.menu_content > .menu_footer{
+.menu_content > .menu_footer {
   position: relative;
   /* background-color: var(--light-color-3); */
   display: flex;
@@ -1019,15 +1019,15 @@ input::placeholder{
     to right bottom,
     #ff6434,
     var(--primary-color)
-    );
-    color: #fff;
+  );
+  color: #fff;
 }
-.menu_content > .menu_footer h3{
+.menu_content > .menu_footer h3 {
   color: inherit;
   font-size: 14px;
 }
 /* menu footer ends */
-.menu_content > ul > li{
+.menu_content > ul > li {
   width: 100%;
   height: 100%;
   border-bottom: 1px solid var(--light-color);
@@ -1039,16 +1039,16 @@ input::placeholder{
   padding: 0 10px;
   transition: all 0.4s ease;
 }
-.menu_content > ul > li.unread{
+.menu_content > ul > li.unread {
   background-color: var(--light-color-3);
 }
-.menu_content > ul > li:hover{
+.menu_content > ul > li:hover {
   background-color: var(--light-color-2);
 }
-.menu_content > ul > li:hover a{
+.menu_content > ul > li:hover a {
   color: var(--primary-color);
 }
-.menu_content > ul > li > a{
+.menu_content > ul > li > a {
   color: inherit;
   transition: all 0.4s ease;
   font-size: 14px;
@@ -1057,9 +1057,8 @@ input::placeholder{
   margin-top: auto;
   font-weight: 500;
   padding-left: 10px;
-
 }
-.menu_content > ul > li > span{
+.menu_content > ul > li > span {
   grid-column: 2 / -1;
   text-align: left;
   color: var(--dark-color-3);
@@ -1067,10 +1066,10 @@ input::placeholder{
   display: block;
   height: 25px;
 }
-.menu_content > ul > li > span i{
+.menu_content > ul > li > span i {
   font-size: 12px;
 }
-.menu_content > ul > li > .img_wrapper{
+.menu_content > ul > li > .img_wrapper {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   border: 1px solid var(--light-color-3);
@@ -1082,50 +1081,50 @@ input::placeholder{
   place-items: center;
   overflow: hidden;
 }
-.menu_content > ul > li > .img_wrapper > img{
+.menu_content > ul > li > .img_wrapper > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.menu_content > ul > li > .img_wrapper > i{
+.menu_content > ul > li > .img_wrapper > i {
   font-size: 20px;
   color: var(--primary-color);
 }
-.show_menu_content{
+.show_menu_content {
   visibility: visible;
   opacity: 1;
-  animation:  animateMenu 0.6s ease;
+  animation: animateMenu 0.6s ease;
 }
 /* correct offscreen */
-.menu_content.offset{
+.menu_content.offset {
   left: -550%;
 }
-.menu_content.offset::before{
+.menu_content.offset::before {
   left: 90%;
   background-color: var(--light-color);
 }
 @keyframes animateMenu {
-  0%{
+  0% {
     visibility: hidden;
     opacity: 0;
   }
-  100%{
+  100% {
     visibility: visible;
     opacity: 1;
   }
 }
-.user_sniper > .user_menu.avatar{
+.user_sniper > .user_menu.avatar {
   width: 100%;
   height: 100%;
   border-radius: 0;
 }
-.user_sniper > .user_menu.avatar > .topbar_avatar{
+.user_sniper > .user_menu.avatar > .topbar_avatar {
   width: 2rem;
   height: 2rem;
   border-radius: 50% !important;
   overflow: hidden;
 }
-.user_sniper > button > i{
+.user_sniper > button > i {
   color: var(--dark-color-3);
 }
 .user_sniper > button.active {
@@ -1165,7 +1164,7 @@ input::placeholder{
   position: relative;
 }
 .user_sniper .notif.active:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
@@ -1175,7 +1174,7 @@ input::placeholder{
   border-radius: 50%;
 }
 .user_sniper .msg.active:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   height: 6px;
@@ -1428,7 +1427,7 @@ input::placeholder{
 }
 /* #ff9966, #ff5e62 */
 .chart__footer h3::before {
-  content: '';
+  content: "";
   width: 3px;
   height: 3px;
   border-radius: 50%;
@@ -1439,7 +1438,7 @@ input::placeholder{
   bottom: 40%;
 }
 .chart__footer h3:nth-child(2):before {
-  content: '';
+  content: "";
   width: 3px;
   height: 3px;
   border-radius: 50%;
@@ -1789,7 +1788,7 @@ input::placeholder{
 }
 .add__patient .header {
   background-image: linear-gradient(to right bottom, #240f0a11, #feb47b10),
-    url('../assets/images/register_page_banner.png');
+    url("../assets/images/register_page_banner.png");
   background-size: cover;
   background-position: center center;
   margin: 0 auto;
@@ -1901,7 +1900,7 @@ textarea {
   font-weight: 400;
 }
 .user__snippet__drop::before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -1932,7 +1931,7 @@ textarea {
     0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
 }
 .msgContent::before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -2024,13 +2023,13 @@ p {
   opacity: 1;
   transition: all 0.4s ease;
 }
-.theme__color:hover{
+.theme__color:hover {
   opacity: 0.8;
 }
-.theme__color:hover i{
+.theme__color:hover i {
   transform: rotate(180deg);
 }
-.theme__color > i{
+.theme__color > i {
   font-size: 18px;
   color: var(--light-color-2);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -2182,7 +2181,7 @@ p {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.144) inset !important;
 }
 .modal .bed > div::before {
-  content: '\ea63';
+  content: "\ea63";
   font-family: LineIcons;
   font-size: 20px;
   display: flex;
@@ -2194,7 +2193,7 @@ p {
   color: var(--primary-color);
 }
 .modal .modal_content .bed .open::before {
-  content: '\2713';
+  content: "\2713";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2229,7 +2228,7 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.082);
 }
 .tooltip::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--light-color);
   width: 14px;
@@ -2335,7 +2334,7 @@ p {
     #ff6434,
     var(--primary-color)
   );
-  color:#f8f8f8;
+  color: #f8f8f8;
   outline: none;
   border: none;
   box-shadow: 0 5px 10px rgba(34, 27, 27, 0.1);
@@ -2353,37 +2352,48 @@ p {
 .toolTip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1); /* If you want dots under the hoverable text */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* Tooltip text */
 .toolTip .toolTipText {
+  position: absolute;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.8);
-  color: var(--white-color);
+  color: var(--dark-color);
   text-align: center;
   padding: 8px 0;
   border-radius: 6px;
 
   /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-
   width: 120px;
   height: auto;
-  top: 100%;
+  top: 120%;
   left: 50%;
   margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  z-index: 9999;
 }
-.toolTip .toolTipText > * {
-  color: var(--light-color-2);
+.toolTip .toolTipText > li {
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: left;
+  color: var(--light-color);
+  transition: all 0.4s ease;
+}
+.toolTip .toolTipText > li:hover {
+  background-color: var(--dark-color-2);
+}
+.toolTip .toolTipText > li > a {
+  font-size: inherit;
+  color: inherit;
+  font-family: "Poppins", sans-serif;
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 .toolTip:hover .toolTipText {
   visibility: visible;
 }
 .toolTip .toolTipText::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   bottom: 100%; /* At the top of the tooltip */
   left: 50%;
@@ -2392,12 +2402,12 @@ p {
   border-style: solid;
   border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
 }
-.calendar_header{
+.calendar_header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-gap: 5px;
 }
-.calendar_header > div{
+.calendar_header > div {
   width: 100%;
   background-color: var(--light-color-3);
   border: 1px solid var(--light-color);
@@ -2408,20 +2418,20 @@ p {
   transition: all 0.4s ease;
   color: var(--dark-color);
 }
-.calendar_header > div:hover{
+.calendar_header > div:hover {
   box-shadow: 0 5px 10px rgba(10, 0, 0, 0.05);
 }
-.calendar_header h2{
+.calendar_header h2 {
   font-size: 14px;
   color: inherit;
   font-weight: 400;
 }
-.calendar_body > div{
+.calendar_body > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-gap: 5px;
 }
-.calendar_body > div > div{
+.calendar_body > div > div {
   width: 100%;
   height: 40px;
   margin-top: 5px;
@@ -2433,14 +2443,14 @@ p {
   transition: all 0.4s ease;
   background-color: var(--light-color);
 }
-.calendar_body > div > div:first-child{
+.calendar_body > div > div:first-child {
   background-color: var(--light-color-3);
   border: 1px solid var(--light-color);
 }
-.calendar_body > div > div:hover{
+.calendar_body > div > div:hover {
   box-shadow: 0 5px 10px rgba(10, 0, 0, 0.05);
 }
-.calendar_body p{
+.calendar_body p {
   font-size: 14px;
   color: var(--dark-color-2);
   font-weight: 400;

@@ -58,7 +58,7 @@
       rgba(34, 51, 68, 0.773),
       rgba(34, 68, 51, 0.027)
     ),
-    url('../assets/images/register_page_banner.png');
+    url("../assets/images/register_page_banner.png");
   background-size: cover;
   background-position: bottom;
   width: 98%;
@@ -147,7 +147,7 @@
   align-items: center;
 }
 .form__status .status div.active:not(:last-child)::after {
-  content: '';
+  content: "";
   height: 4rem;
   border: 2px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -157,7 +157,7 @@
   transform: translate(-50%, -50%);
 }
 .form__status .status div.active.out_patient:not(:last-child)::after {
-  content: '';
+  content: "";
   height: 6rem;
   background: var(--primary-color);
   position: absolute;
@@ -166,7 +166,7 @@
   transform: translate(-50%, -50%);
 }
 .form__status .status.in_patient .active:not(:last-child)::after {
-  content: '';
+  content: "";
   height: 10rem !important;
   background: var(--primary-color);
   position: absolute;
@@ -175,7 +175,7 @@
   transform: translate(-50%, -50%);
 }
 .form__status .status div.active::before {
-  content: '\ea55';
+  content: "\ea55";
   font-family: LineIcons;
   font-weight: 600;
   color: var(--light-color);
@@ -603,6 +603,9 @@ select {
   z-index: 9;
   background-color: var(--white-color);
 }
+.header_section.no-padding {
+  padding: 0 !important;
+}
 .header_section h3 {
   color: var(--dark-color);
   font-size: 16px;
@@ -815,7 +818,7 @@ select {
   overflow: auto;
 }
 /* style table */
-.table_section .table_container{
+.table_section .table_container {
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -823,10 +826,10 @@ select {
   min-height: 20rem;
   overflow: auto;
 }
-.table_section .table_container::-webkit-scrollbar{
+.table_section .table_container::-webkit-scrollbar {
   height: 5px;
 }
-.table_section table{
+.table_section table {
   width: auto;
   max-width: 95%;
   border-spacing: 0.5rem;
@@ -834,23 +837,24 @@ select {
   border: 1px solid var(--primary-color);
   overflow: auto;
 }
-.table_section table thead{
+.table_section table thead {
   background-color: rgb(250, 245, 245);
 }
-.table_section table td, th{
+.table_section table td,
+th {
   border: 1px solid var(--white-color);
   padding: 0.6rem 1rem;
   text-align: left;
   white-space: nowrap;
 }
-.table_section table *{
+.table_section table * {
   font-size: 14px;
 }
-.table_section table th{
+.table_section table th {
   color: var(--dark-color);
   font-weight: 500;
 }
-.table_section table td > *{
+.table_section table td > * {
   color: var(--light-text);
   font-weight: 400;
 }
@@ -1054,7 +1058,7 @@ a {
   font-weight: 400;
   color: var(--light-text);
 }
-.table_body.chart input[type='checkbox'] {
+.table_body.chart input[type="checkbox"] {
   display: none;
 }
 .table_body.chart label {
@@ -1072,8 +1076,8 @@ a {
   opacity: 1;
   cursor: pointer;
 }
-.table_body.chart input[type='checkbox']:checked ~ label::before {
-  content: '\2713';
+.table_body.chart input[type="checkbox"]:checked ~ label::before {
+  content: "\2713";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -1206,7 +1210,7 @@ a {
   font-weight: 500;
 }
 .table_tabs > .active::after {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -1345,10 +1349,50 @@ a {
   font-size: 12px;
 }
 .action-icons {
+  position: relative;
   display: flex !important;
   justify-content: center;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
+/* drop-menu */
+/* .action-menu-content {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  background-color: var(--light-color);
+  width: 100%;
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 5px 10px rgba(10, 0, 0, 0.05);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.action-menu-content > li {
+  background-color: transparent;
+  padding: 2px 10px;
+  transition: all 0.5s ease;
+}
+.action-menu-content > li:hover {
+  background-color: var(--light-color-2);
+}
+#action-drop-menu {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+}
+#action-drop-menu:checked ~ .action-menu-content {
+  opacity: 1;
+  visibility: visible;
+} */
+/* drop-menu end */
 .action-icons:last-child i {
+  position: relative;
   padding: 5px;
   border-radius: 5px;
   font-size: 12px;
@@ -1365,13 +1409,11 @@ a {
   color: var(--light-color);
 } */
 .action-icons i {
-  background-image: linear-gradient(
-    to bottom,
-    #fd501c,
-    var(--primary-color)
-  );
+  position: relative;
+  background-image: linear-gradient(to bottom, #fd501c, var(--primary-color));
   margin-left: 5px;
   color: var(--light-color);
+  z-index: 1;
 }
 .patient_details_shot {
   width: 80%;
@@ -1637,21 +1679,21 @@ select {
   background: var(--light-color-2) !important;
   transition: all 0.4s ease;
 }
-.add_birth > .group > select:hover{
+.add_birth > .group > select:hover {
   border: 1px dotted var(--primary-color);
 }
-.add_birth > .group > select:focus{
+.add_birth > .group > select:focus {
   border: 1px solid var(--primary-color);
 }
 .add_birth > .group > div {
   position: relative;
   margin-top: 10px;
 }
-.add_birth > .group input[type='radio'] {
+.add_birth > .group input[type="radio"] {
   display: none;
 }
-.add_birth > .group input[type='radio'] ~ label::before {
-  content: '';
+.add_birth > .group input[type="radio"] ~ label::before {
+  content: "";
   position: absolute;
   left: 15%;
   top: 50%;
@@ -1663,8 +1705,8 @@ select {
   display: grid;
   place-items: center;
 }
-.add_birth > .group input[type='radio']:checked ~ label:after {
-  content: '';
+.add_birth > .group input[type="radio"]:checked ~ label:after {
+  content: "";
   position: absolute;
   left: 15%;
   top: 50%;
@@ -1695,14 +1737,14 @@ select {
   display: block;
   width: 100%;
 }
-.add_birth > .group input[type='file'] {
+.add_birth > .group input[type="file"] {
   grid-column: 1 / -1;
   display: none;
 }
-.add_birth > .group input[type='file'] ~ label i {
+.add_birth > .group input[type="file"] ~ label i {
   padding-right: 5px;
 }
-.add_birth > .group input[type='file'] ~ label {
+.add_birth > .group input[type="file"] ~ label {
   background-image: linear-gradient(
     to right bottom,
     #ff6434,
@@ -1719,7 +1761,7 @@ select {
   opacity: 1;
   transition: all 0.4s ease;
 }
-.add_birth > .group input[type='file'] ~ label:hover {
+.add_birth > .group input[type="file"] ~ label:hover {
   opacity: 0.8;
 }
 .add_birth > .group .upload_attachment {
@@ -1744,11 +1786,11 @@ select {
   background: var(--light-color-2) !important;
   transition: all 0.4s ease-in;
 }
-.add_birth textarea:hover{
-  border: 1px dotted var(--primary-color)
+.add_birth textarea:hover {
+  border: 1px dotted var(--primary-color);
 }
-.add_birth textarea:focus{
-  border: 1px solid var(--primary-color)
+.add_birth textarea:focus {
+  border: 1px solid var(--primary-color);
 }
 .add_birth button {
   width: 100%;
@@ -1770,7 +1812,7 @@ select {
   place-items: center;
   margin-top: 10px;
 }
-.form_section_header{
+.form_section_header {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1781,8 +1823,7 @@ select {
   padding-bottom: 10px;
   margin-top: 20px;
 }
-.form_section_header h3{
-  
+.form_section_header h3 {
 }
 .profile_img_wrapper {
   overflow: hidden;
