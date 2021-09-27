@@ -184,6 +184,7 @@
 }
 
 .form_group {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 45px;
@@ -214,7 +215,7 @@ select {
   border-radius: 10px;
   border: 1px solid rgba(107, 112, 129, 0.25);
   outline: none;
-  color: var(--light-color-3);
+  color: var(--dark-color-3);
   width: 100%;
   height: 100%;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -231,10 +232,10 @@ select {
   padding: 0 25px;
 }
 .form_group input::placeholder {
-  color: var(--light-color-3);
+  color: var(--dark-color-3);
 }
 .form_group textarea::placeholder {
-  color: var(--light-color-3);
+  color: var(--dark-color-3);
 }
 .form_group label {
   position: absolute;
@@ -453,7 +454,7 @@ select {
   grid-column: 2 / -1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 9rem 3rem 5rem 1fr 1fr;
+  grid-template-rows: 9rem 3rem 5rem auto 1fr;
   justify-content: center;
   width: 100% !important;
   height: 100%;
@@ -554,7 +555,7 @@ select {
 }
 .patient_profile .patient_contact p,
 .patient_note p {
-  color: var(--light-text);
+  color: var(--dark-color-2);
   font-size: 14px;
   font-weight: 400;
   margin-top: 5px;
@@ -808,6 +809,10 @@ select {
   width: 100%;
   text-align: right;
 }
+.price_tag > span {
+  font-weight: 400;
+  color: var(--primary-color);
+}
 .table_section {
   position: relative;
   height: auto;
@@ -870,7 +875,7 @@ th {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--hightlight-color);
-  background-color: rgb(250, 245, 245);
+  background-color: var(--light-color-2);
 }
 .table_section.search_result {
   margin-top: 40px;
@@ -882,7 +887,7 @@ th {
   width: 100%;
   height: 40px;
   margin: 0 auto;
-  background-color: rgb(250, 245, 245);
+  background-color: var(--light-color-2);
   align-items: flex-start;
   grid-auto-flow: column;
   grid-template-rows: auto;
@@ -898,7 +903,7 @@ th {
 }
 .table_section .search_header > div > h2 {
   font-size: 14px;
-  color: var(--da);
+  color: var(--dark-color-2);
 }
 .table_section .search_content {
   display: grid;
@@ -936,7 +941,7 @@ a {
 .table_columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .table_columns .column {
   width: 100%;
@@ -944,9 +949,9 @@ a {
 .table_columns > .column > .header {
   font-size: 16px;
   font-weight: 500;
+  height: 20px;
   color: var(--dark-color);
-  margin-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .table_columns > .column > .load_more {
   position: relative;
@@ -957,7 +962,6 @@ a {
   outline: none;
   padding: 10px;
   background-color: transparent;
-  margin-left: 15px;
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
@@ -1558,9 +1562,10 @@ a {
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-auto-rows: 30px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  grid-auto-rows: 30px;
 }
 .column.header {
   width: 100%;
@@ -1832,7 +1837,6 @@ select {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  position: absolute;
   top: 0;
 }
 .patient_details_shot.births {
@@ -1927,8 +1931,6 @@ select {
   grid-gap: 10px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--light-color-3);
-  padding: 0 20px;
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -1938,7 +1940,7 @@ select {
   align-items: center;
 }
 .sidebar_table > div:hover {
-  background-color: rgb(250, 245, 245);
+  background-color: var(--light-color);
 }
 .sidebar_table > .header > h3 {
   font-size: 14px;
@@ -1962,7 +1964,7 @@ select {
 .sidebar_table > .header {
   width: 100%;
   height: 100%;
-  background-color: rgb(250, 245, 245);
+  background-color: var(--light-color-2);
   border-radius: 20px;
 }
 .table_form .buttons {
@@ -2010,7 +2012,7 @@ select {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.4s ease;
-  background-color: var(--dark-color-2);
+  background-color: var(--light-color-2);
 }
 .form_table_section > form > div > select:hover {
   border: 1px solid var(--primary-color);

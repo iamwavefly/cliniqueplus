@@ -916,7 +916,7 @@
 
               <!-- Tab content -->
               <div id="timeline" class="tabcontent">
-                <div class="header_section">
+                <div class="header_section no-padding">
                   <div class="advanced_search_section">
                     <form
                       action="/"
@@ -924,14 +924,20 @@
                       id="patientFilterForm"
                       method="get"
                     >
-                      <div class="form_group">
-                        <select name="filter_options" required id="filter">
+                      <div class="form_group datepicker">
+                        <label for="datepicker-start">Start Date</label>
+                        <input type="date" autocomplete="off" id="datepicker-start">	
+                        <!-- previous input 👇 -->
+                        <!-- <select name="filter_options" required id="filter">
                           <option disabled selected>Select year</option>
                           <option value="child_name">2021</option>
-                        </select>
+                        </select> -->
                       </div>
-                      <div class="form_group">
-                        <select name="filter_options" required id="filter">
+                      <div class="form_group datepicker">
+                        <label for="datepicker-end">End Date </label>	
+                        <input type="date" autocomplete="off" id="datepicker-end">
+                        <!-- previous input 👇 -->
+                        <!-- <select name="filter_options" required id="filter">
                           <option disabled selected>Select month</option>
                           <option value="child_name">Jan</option>
                           <option value="child_name">Feb</option>
@@ -945,7 +951,7 @@
                           <option value="child_name">Oct</option>
                           <option value="child_name">Nov</option>
                           <option value="child_name">Dec</option>
-                        </select>
+                        </select> -->
                       </div>
                       <button class="btn primary">
                         <span>Search<i class="lni lni-search"></i></span>
@@ -958,7 +964,7 @@
                   ></div>
                   <div class="buttons inline">
                     <button><i class="lni lni-plus"></i> Apply Leave</button>
-                    <button>Approve Leave Request</button>
+                    <button>Approve Request</button>
                   </div>
                 </div>
 

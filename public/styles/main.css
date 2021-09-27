@@ -189,6 +189,9 @@ hr {
 .mt-5 {
   margin-top: 5px;
 }
+.px-2 {
+  margin: 0 2rem !important;
+}
 select {
   -webkit-appearance: none;
 }
@@ -345,7 +348,7 @@ input::placeholder {
   margin-left: 5px;
   padding: 2px 10px;
   text-align: center;
-  background-color: rgba(10, 0, 0, 0.1);
+  background-color: rgba(10, 0, 0, 0.05);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05) inset;
 }
 .group {
@@ -403,7 +406,7 @@ input::placeholder {
 }
 .group > .checkbox > span {
   font-size: 15px;
-  color: var(--dark-color);
+  color: var(--dark-color-2);
 }
 .group > .checkbox label {
   position: absolute;
@@ -1227,16 +1230,18 @@ input::placeholder {
   grid-gap: 5px;
   position: relative;
   z-index: 1;
-  width: 95%;
+  width: auto;
   height: auto;
   margin: 0 auto;
+}
+.cards.grid-4 {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 .cards > div {
   position: relative;
   display: grid;
   align-items: center;
-  grid-template-columns: 80px 1fr;
-  padding: 0 10px;
+  grid-template-columns: 120px 1fr;
   background-color: var(--light-color);
   width: 100%;
   height: auto;
@@ -1370,7 +1375,7 @@ input::placeholder {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border: 0.1px solid var(--dark-color);
+  border: 0.1px solid var(--light-color-3);
   grid-template-rows: 50px 1fr !important;
 }
 .chart__container {
@@ -1515,17 +1520,18 @@ input::placeholder {
 .chart-5 .header {
   width: 100%;
   height: 100%;
-  color: var(--light-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   padding-top: 10px;
   padding-left: 20px;
 }
 .chart-5 .header h3 {
+  position: relative;
+  color: #f1f1f1;
   font-size: 24px;
   font-weight: 600;
   padding-bottom: 5px;
+  margin: auto 0;
 }
 .chart-5 .header p {
   font-size: 14px;
@@ -2006,7 +2012,7 @@ p {
   width: fit-content;
   height: 40px;
   padding: 10px;
-  background-color: var(--dark-color);
+  background-color: var(--theme-color) !important;
   border-left: 2px solid var(--primary);
   margin-top: 40px;
   line-height: 1.4rem;
@@ -2029,10 +2035,18 @@ p {
 .theme__color:hover i {
   transform: rotate(180deg);
 }
+.theme__color.theme_enabled > i {
+  border-radius: 20px;
+  color: rgb(255, 246, 164);
+  background-color: rgba(238, 177, 9, 0.527);
+  box-shadow: 0 0px 10px rgba(226, 211, 8, 0.8),
+    0 0px 20px rgba(226, 211, 8, 0.8);
+}
 .theme__color > i {
   font-size: 18px;
   color: var(--light-color-2);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: none;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .theme__color h3 {
   font-size: 14px;
@@ -2453,5 +2467,19 @@ p {
 .calendar_body p {
   font-size: 14px;
   color: var(--dark-color-2);
+  font-weight: 400;
+}
+/* date picker start 📅 */
+.datepicker input {
+  border-radius: 0 !important;
+  height: 80%;
+  margin: auto 0;
+  color: rgba(78, 75, 75, 0.5);
+}
+.datepicker label {
+  opacity: 1;
+  transform: none;
+  left: 0;
+  top: -10%;
   font-weight: 400;
 }

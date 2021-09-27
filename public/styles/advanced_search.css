@@ -15,22 +15,20 @@
   align-items: center;
   width: 100%;
 }
-.advanced_search_section > form input,
-select {
-  width: 100%;
-  border: 1px solid var(--light-color-3);
-}
-.advanced_search_section > form input::placeholder{
+.advanced_search_section > form input::placeholder {
   color: #888;
 }
 .advanced_search_section > form input {
+  background-color: var(--light-color);
   border-radius: 20px 0 0 20px;
   box-shadow: 0 0px 10px rgba(66, 19, 19, 0.048) inset;
 }
 .advanced_search_section > form select {
+  width: 100%;
   border-radius: 0;
   box-shadow: 0 0px 10px rgba(66, 19, 19, 0.048) inset;
-  color: var(--dark-color-3)
+  border: 1px solid var(--light-color-3);
+  color: var(--dark-color-3);
 }
 .advanced_search_section > form button {
   border-radius: 5px 20px 20px 5px !important;
