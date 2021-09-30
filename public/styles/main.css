@@ -506,6 +506,7 @@ input::placeholder {
 }
 .bg-info {
   color: #f1f1f1 !important;
+  background-image: unset !important;
   background-color: var(--sky-color) !important;
   padding: 0 5px;
   border-radius: 5px;
@@ -513,7 +514,8 @@ input::placeholder {
   transition: all 0.4s ease;
 }
 .bg-warning {
-  color: #f1f1f1 !important;
+  color: var(--dark-color) !important;
+  background-image: unset !important;
   background-color: var(--yellow-color) !important;
   padding: 0 5px;
   border-radius: 5px;
@@ -522,6 +524,7 @@ input::placeholder {
 }
 .bg-secondary {
   color: #fff !important;
+  background-image: unset !important;
   background-color: var(--gray-color) !important;
   padding: 0 5px;
   border-radius: 5px;
