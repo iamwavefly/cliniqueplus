@@ -129,6 +129,10 @@
   --green-color: #21a766;
   --red-color: #f8d7da;
   --orange-color: #ff7539;
+  --yellow-color: #ffc107;
+  --gray-color: #6c757d;
+  --sky-color: #17a2b8;
+  --yellow-color: #ffc107;
   --border-color: rgba(107, 112, 129, 0.089);
   --shadow-box: 0 0 10px rgba(58, 40, 40, 0.1);
   --border: 1px solid #eee;
@@ -463,23 +467,12 @@ input::placeholder {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+/* reset bg color */
 .bg-primary {
   color: #f1f1f1 !important;
   background-image: linear-gradient(
     to right bottom,
     #ff6434,
-    var(--primary-color)
-  );
-  padding: 0 5px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
-  transition: all 0.4s ease;
-}
-.bg-danger {
-  color: #f1f1f1 !important;
-  background-image: linear-gradient(
-    to right bottom,
-    #fc351a,
     var(--primary-color)
   );
   padding: 0 5px;
@@ -511,13 +504,17 @@ input::placeholder {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
   transition: all 0.4s ease;
 }
+.bg-info {
+  color: #f1f1f1 !important;
+  background-color: var(--sky-color) !important;
+  padding: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
+  transition: all 0.4s ease;
+}
 .bg-warning {
   color: #f1f1f1 !important;
-  background-image: linear-gradient(
-    to right bottom,
-    #e99b0a,
-    var(--primary-color)
-  );
+  background-color: var(--yellow-color) !important;
   padding: 0 5px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
@@ -525,7 +522,7 @@ input::placeholder {
 }
 .bg-secondary {
   color: #fff !important;
-  background-color: var(--dark-color-3);
+  background-color: var(--gray-color) !important;
   padding: 0 5px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
