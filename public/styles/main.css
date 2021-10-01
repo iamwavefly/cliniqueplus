@@ -514,7 +514,7 @@ input::placeholder {
   transition: all 0.4s ease;
 }
 .bg-warning {
-  color: var(--dark-color) !important;
+  color: #fff !important;
   background-image: unset !important;
   background-color: var(--yellow-color) !important;
   padding: 0 5px;
