@@ -384,10 +384,13 @@ input::placeholder {
 }
 .group > button:last-child {
   background-image: none;
-  color: var(--dark-color);
+  color: inherit;
   border: 1px solid var(--primary-color);
   background-color: transparent;
   transition: all 0.2s ease;
+}
+.group > button:last-child > * {
+  color: var(--dark-color);
 }
 .group > button:hover {
   opacity: 0.8;
@@ -399,8 +402,10 @@ input::placeholder {
     #ff6434,
     var(--primary-color)
   );
-  color: var(--white-color);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.group > button:last-child > *:hover {
+  color: var(--white-color);
 }
 .group > .checkbox {
   position: relative;
