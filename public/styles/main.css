@@ -379,6 +379,9 @@ input::placeholder {
   border-radius: 5px;
   transition: all 0.2s ease;
 }
+.group > button > * {
+  color: #fff;
+}
 .group > button:last-child {
   background-image: none;
   color: var(--dark-color);
