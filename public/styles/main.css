@@ -2353,6 +2353,9 @@ p {
   border: none;
   box-shadow: 0 5px 10px rgba(34, 27, 27, 0.1);
 }
+.buttons.inline > button > * {
+  color: #fff;
+}
 .buttons.inline > button > i {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px;
